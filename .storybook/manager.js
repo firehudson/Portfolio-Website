@@ -5,7 +5,7 @@ addons.setConfig({
   theme: {
     ...themes.dark,
     brandImage: 'https://hamishw.com/icon.svg',
-    brandTitle: 'Dr. Saloni Kabra Components',
+    brandTitle: 'Aditya Vaishnav Components',
     brandUrl: 'https://hamishw.com',
   },
 });
