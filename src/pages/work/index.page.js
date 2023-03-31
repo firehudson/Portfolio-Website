@@ -1,12 +1,12 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import { POSTS_PATH, postFilePaths } from 'utils/mdx';
+import { WORK_PATH, workFilePaths } from 'utils/mdx';
 export { Work as default } from './Work';
 
 export function getStaticProps() {
-  const allPosts = postFilePaths.map(filePath => {
-    const source = fs.readFileSync(path.join(POSTS_PATH, filePath));
+  const allPosts = workFilePaths.map(filePath => {
+    const source = fs.readFileSync(path.join(WORK_PATH, filePath));
     const { data, content } = matter(source);
     return {
       ...data,

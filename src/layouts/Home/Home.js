@@ -23,13 +23,19 @@ import productEquipement from 'assets/productEquipement.jpg';
 import productEquipementLarge from 'assets/productEquipement-large.jpg';
 import procedurePage from 'assets/procedurePage.jpg';
 import procedurePageLarge from 'assets/procedurePage-large.jpg';
-import healthCareProfessional from 'assets/healthCareProfessional.jpg';
-import healthCareProfessionalLarge from 'assets/healthCareProfessional-large.jpg';
+import debug from 'assets/debug.jpg';
+// import debugLarge from 'assets/debug-large.jpg';
 import proofReading from 'assets/proofReading.jpg';
 import proofReadingLarge from 'assets/proofReading-large.jpg';
 import academicWritingLarge from 'assets/academic-writing-large.jpg';
 import academicWriting from 'assets/academic-writing.png';
-import sprTextureLarge from 'assets/spr-lesson-builder-dark-large.jpg';
+import mobileResponsive from 'assets/mobileResponsive.jpg';
+// import mobileResponsiveLarge from 'assets/mobileResponsive-large.jpg';
+
+import crossBorderCompatiblity from 'assets/crossBorderCompatiblity.jpeg';
+// import crossBorderCompatiblityLarge from 'assets/crossBorderCompatiblity-large.jpg';
+import serverSide from 'assets/serverSide.jpg';
+// import serverSideLarge from 'assets/serverSide-large.jpg';
 import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
 import sprTexture from 'assets/spr-lesson-builder-dark.jpg';
 import { Footer } from 'components/Footer';
@@ -134,14 +140,14 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Healthcare Professional"
-        description="As a healthcare professional, I play a crucial role in utilizing technology to improve patient care. Teleconsultation, care coordination, and electronic medical records (EMRs) are just a few examples of how technology is transforming the healthcare industry, and I am at the forefront of this change."
+        title="Debugging and Testing"
+        description="Perform extensive testing and debugging to identify and fix any errors or issues with the web pages or application."
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',
           textures: [
             {
-              srcSet: [healthCareProfessional, healthCareProfessionalLarge],
+              srcSet: [debug, debug],
               placeholder: sliceTexturePlaceholder,
             },
           ],
@@ -149,37 +155,11 @@ export const Home = () => {
       />
       <ProjectSummary
         id="project-2"
-        alternate
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Academic Writing"
-        description="With extensive knowledge of research and academic writing styles, I offer high-quality and well-researched academic writing services, including literature reviews, research papers, reports, etc."
-        buttonText="View Assignments"
-        buttonLink="articles/?0=Academic+Writing"
-        model={{
-          type: 'phone',
-          alt: 'Annotating a biomedical image in the Slice app',
-          textures: [
-            {
-              srcSet: [academicWriting, academicWritingLarge],
-              placeholder: sliceTexturePlaceholder,
-            },
-            {
-              srcSet: [academicWriting, academicWriting],
-              placeholder: gamestackTexturePlaceholder,
-            },
-          ],
-        }}
-      />
-
-      <ProjectSummary
-        id="project-3"
-        sectionRef={projectThree}
-        visible={visibleSections.includes(projectThree.current)}
-        index={3}
-        title="Case Study"
-        description="I create well-researched case studies highlighting the practical applications of medical theory and research. My case studies are detailed and well-researched, providing valuable insights for academic purposes."
+        title="Performance Optimization"
+        description="Optimize web page performance to load quickly and efficiently while minimizing resource usage."
         buttonText="View Case Studies"
         buttonLink="/articles/?0=Case+Study"
         model={{
@@ -187,7 +167,27 @@ export const Home = () => {
           alt: 'Smart Sparrow lesson builder',
           textures: [
             {
-              srcSet: [sprTexture, sprTextureLarge],
+              srcSet: [sprTexture, mobileResponsive],
+              placeholder: sprTexturePlaceholder,
+            },
+          ],
+        }}
+      />
+      <ProjectSummary
+        id="project-3"
+        sectionRef={projectThree}
+        visible={visibleSections.includes(projectThree.current)}
+        index={3}
+        title="Mobile Responsiveness"
+        description="Optimize web pages for mobile devices to ensure they are easy to use and navigate on smaller screens."
+        buttonText="View Case Studies"
+        buttonLink="/articles/?0=Case+Study"
+        model={{
+          type: 'laptop',
+          alt: 'Smart Sparrow lesson builder',
+          textures: [
+            {
+              srcSet: [mobileResponsive, mobileResponsive],
               placeholder: sprTexturePlaceholder,
             },
           ],
@@ -200,8 +200,8 @@ export const Home = () => {
         sectionRef={projectFour}
         visible={visibleSections.includes(projectFour.current)}
         index={4}
-        title="Medical Content Writing"
-        description="I provide professional medical content writing services that are accurate, informative, and engaging. From blog posts and articles to social media content and website copy, I help clients communicate complex medical information in an accessible and easy-to-understand way."
+        title="Cross-Browser Compatibility"
+        description=" Ensure that web pages are compatible with different web browsers and operating systems, to ensure a consistent user experience across different devices and platforms."
         buttonText="View Content"
         buttonLink="/articles/?0=Medical+Content+Writing"
         model={{
@@ -209,7 +209,7 @@ export const Home = () => {
           alt: 'Annotating a biomedical image in the Slice app',
           textures: [
             {
-              srcSet: [medicalContentWriting, medicalContentWritingLarge],
+              srcSet: [crossBorderCompatiblity, crossBorderCompatiblity],
               placeholder: sliceTexturePlaceholder,
             },
           ],
@@ -221,8 +221,29 @@ export const Home = () => {
         sectionRef={projectFive}
         visible={visibleSections.includes(projectFive.current)}
         index={5}
-        title="Landing Page Copy"
-        description="As a medical writer, I create compelling landing page copy that highlights the benefits of medical products and services. I help businesses convert website visitors into leads and customers through persuasive and engaging copy."
+        title="User Interface Development"
+        description="Create intuitive, easy-to-use, and aesthetically pleasing user interfaces (UI) that users interact with."
+        buttonText="View Content"
+        buttonLink="/articles/?0=Landing+Page+Copy"
+        model={{
+          type: 'laptop',
+          alt: 'Annotating a biomedical image in the Slice app',
+          textures: [
+            {
+              srcSet: [landingPage, landingPageLarge],
+              placeholder: sliceTexturePlaceholder,
+            },
+          ],
+        }}
+      />
+      <ProjectSummary
+        id="project-6"
+        alternate
+        sectionRef={projectSix}
+        visible={visibleSections.includes(projectSix.current)}
+        index={6}
+        title="Design Implementation"
+        description="Transform designs provided by web designers into functional web pages using HTML, CSS, and JavaScript."
         buttonText="View Content"
         buttonLink="/articles/?0=Landing+Page+Copy"
         model={{
@@ -237,31 +258,6 @@ export const Home = () => {
         }}
       />
 
-      <ProjectSummary
-        id="project-6"
-        alternate
-        sectionRef={projectSix}
-        visible={visibleSections.includes(projectSix.current)}
-        index={6}
-        title="Service Page"
-        description="With my expertise in medical writing, I craft informative and persuasive service pages that highlight the unique benefits of medical services. I help clients differentiate themselves from competitors and drive more website traffic."
-        buttonText="View Pages"
-        buttonLink="/articles/?0=Service+Page"
-        model={{
-          type: 'phone',
-          alt: 'App login screen',
-          textures: [
-            {
-              srcSet: [gamestackTexture, gamestackTextureLarge],
-              placeholder: gamestackTexturePlaceholder,
-            },
-            {
-              srcSet: [gamestackTexture2, gamestackTexture2Large],
-              placeholder: gamestackTexture2Placeholder,
-            },
-          ],
-        }}
-      />
       <ProjectSummary
         id="project-7"
         sectionRef={projectSeven}

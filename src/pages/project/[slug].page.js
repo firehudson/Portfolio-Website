@@ -8,7 +8,7 @@ import readingTime from 'reading-time';
 import rehypeImgSize from 'rehype-img-size';
 import rehypeMinify from 'rehype-preset-minify';
 import rehypeSlug from 'rehype-slug';
-import { POSTS_PATH, postFilePaths } from 'utils/mdx';
+import { PROJECTS_PATH, projectFilePaths } from 'utils/mdx';
 import { formatTimecode } from 'utils/timecode';
 import rehypePrism from '@mapbox/rehype-prism';
 import { generateOgImage } from './og-image';
@@ -68,7 +68,7 @@ export default function PostPage({ frontmatter, code, timecode, ogImage }) {
 }
 
 export const getStaticProps = async ({ params }) => {
-  const postFilePath = path.join(POSTS_PATH, `${params.slug}.mdx`);
+  const postFilePath = path.join(PROJECTS_PATH, `${params.slug}.mdx`);
   const source = fs.readFileSync(postFilePath, 'utf-8');
 
   const { code, frontmatter, matter } = await bundleMDX({
@@ -104,7 +104,7 @@ export const getStaticProps = async ({ params }) => {
 };
 
 export const getStaticPaths = async () => {
-  const paths = postFilePaths
+  const paths = projectFilePaths
     .map(filePath => filePath.replace(/\.mdx?$/, ''))
     .map(slug => ({ params: { slug } }));
 
