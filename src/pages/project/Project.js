@@ -25,7 +25,7 @@ const ProjectPost = ({
   featured,
   banner,
   categories,
-  timecode,
+  link,
   index,
 }) => {
   const [hovered, setHovered] = useState(false);
@@ -67,40 +67,40 @@ const ProjectPost = ({
           />
         </div>
       )}
-      <RouterLink href={`/Project/${slug}`} scroll={false}>
-        <a
-          className={styles.postLink}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >
-          <div className={styles.postDetails}>
-            <div aria-hidden className={styles.postDate}>
-              <Divider lineWidth="33%" notchWidth="64px" notchHeight="8px" />
-              {categories?.map((text, index) => (
-                <div className={styles.chipsArticle} key={index}>
-                  {text}
-                </div>
-              ))}
-            </div>
-
-            <Heading as="h2" level={featured ? 2 : 4}>
-              {title}
-            </Heading>
-
-            <Text size={featured ? 'l' : 's'} as="p">
-              {abstract}
-            </Text>
-            <div className={styles.postFooter}>
-              <Button secondary iconHoverShift icon="chevronRight" as="div">
-                Read
-              </Button>
-              <Text className={styles.timecode} size="s">
-                {timecode}
-              </Text>
-            </div>
+      {/* <RouterLink href={`/Project/${slug}`} scroll={false}> */}
+      <a
+        href={`${link}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.postLink}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        <div className={styles.postDetails}>
+          <div aria-hidden className={styles.postDate}>
+            <Divider lineWidth="33%" notchWidth="64px" notchHeight="8px" />
+            {categories?.map((text, index) => (
+              <div className={styles.chipsArticle} key={index}>
+                {text}
+              </div>
+            ))}
           </div>
-        </a>
-      </RouterLink>
+
+          <Heading as="h2" level={featured ? 2 : 4}>
+            {title}
+          </Heading>
+
+          <Text size={featured ? 'l' : 's'} as="p">
+            {abstract}
+          </Text>
+          <div className={styles.postFooter}>
+            <Button secondary iconHoverShift icon="chevronRight" as="div">
+              Visit
+            </Button>
+          </div>
+        </div>
+      </a>
+      {/* </RouterLink> */}
       {featured && (
         <Text aria-hidden className={styles.postTag} size="s">
           477

@@ -15,9 +15,9 @@ import { useState, useEffect } from 'react';
 import { formatDate } from 'utils/date';
 import { classes, cssProps } from 'utils/style';
 import { Chips } from 'components/Chips';
-import styles from './Work.module.css';
+import styles from './Experience.module.css';
 
-const WorkPost = ({
+const ExperiencePost = ({
   slug,
   title,
   abstract,
@@ -25,7 +25,6 @@ const WorkPost = ({
   featured,
   banner,
   categories,
-  timecode,
   index,
 }) => {
   const [hovered, setHovered] = useState(false);
@@ -67,40 +66,37 @@ const WorkPost = ({
           />
         </div>
       )}
-      <RouterLink href={`/Work/${slug}`} scroll={false}>
-        <a
-          className={styles.postLink}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >
-          <div className={styles.postDetails}>
-            <div aria-hidden className={styles.postDate}>
-              <Divider lineWidth="33%" notchWidth="64px" notchHeight="8px" />
-              {categories?.map((text, index) => (
-                <div className={styles.chipsArticle} key={index}>
-                  {text}
-                </div>
-              ))}
-            </div>
-
-            <Heading as="h2" level={featured ? 2 : 4}>
-              {title}
-            </Heading>
-
-            <Text size={featured ? 'l' : 's'} as="p">
-              {abstract}
-            </Text>
-            <div className={styles.postFooter}>
-              <Button secondary iconHoverShift icon="chevronRight" as="div">
-                Read
-              </Button>
-              <Text className={styles.timecode} size="s">
-                {timecode}
-              </Text>
-            </div>
+      {/* <RouterLink href={`/Experience/${slug}`} scroll={false}> */}
+      <a
+        className={styles.postLink}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        <div className={styles.postDetails}>
+          <div aria-hidden className={styles.postDate}>
+            <Divider lineWidth="33%" notchWidth="64px" notchHeight="8px" />
+            {categories?.map((text, index) => (
+              <div className={styles.chipsArticle} key={index}>
+                {text}
+              </div>
+            ))}
           </div>
-        </a>
-      </RouterLink>
+
+          <Heading as="h2" level={featured ? 2 : 4}>
+            {title}
+          </Heading>
+
+          <Text size={featured ? 'l' : 's'} as="p">
+            {abstract}
+          </Text>
+          {/* <div className={styles.postFooter}>
+            <Button secondary iconHoverShift icon="chevronRight" as="div">
+              Visit
+            </Button>
+          </div> */}
+        </div>
+      </a>
+      {/* </RouterLink> */}
       {featured && (
         <Text aria-hidden className={styles.postTag} size="s">
           477
@@ -149,7 +145,7 @@ const SkeletonPost = ({ index }) => {
   );
 };
 
-export const Work = ({ posts, featured }) => {
+export const Experience = ({ posts, featured }) => {
   const [selectedCategories, setSelectedCategories] = useState([]);
 
   const router = useRouter();
@@ -166,18 +162,11 @@ export const Work = ({ posts, featured }) => {
   }, []);
 
   const categories = [
-    'Academic Writing',
-    'Case Study',
-    'Medical Content Writing',
-    'Landing Page Copy',
-    'Service Page',
-    'Product Description',
-    'Procedure Page',
-    'Technical Writing',
-    'SEO Writing',
-    'Blog',
-    'Web Page Content',
-    'Newsletter',
+    'Full-Stack Developer',
+    'Senior Frontend Developer',
+    'Frontend Developer',
+    'Solution Engineer',
+    'Frontend Architect',
     'Reset All',
   ];
 
@@ -188,7 +177,7 @@ export const Work = ({ posts, featured }) => {
   const postsHeader = (
     <header className={styles.header}>
       <Heading className={styles.heading} level={5} as="h1">
-        <DecoderText text="Work Samples" />
+        <DecoderText text="Experience" />
       </Heading>
     </header>
   );
@@ -212,7 +201,7 @@ export const Work = ({ posts, featured }) => {
           selectedCategories.some(elem => post.categories.includes(elem)) ||
           selectedCategories.length === 0
         )
-          return <WorkPost key={slug} slug={slug} index={index} {...post} />;
+          return <ExperiencePost key={slug} slug={slug} index={index} {...post} />;
       })}
       {Array(2)
         .fill()
@@ -222,13 +211,13 @@ export const Work = ({ posts, featured }) => {
     </div>
   );
 
-  const featuredPost = <WorkPost {...featured} />;
+  const featuredPost = <ExperiencePost {...featured} />;
 
   return (
-    <article className={styles.Work}>
+    <article className={styles.experience}>
       <Meta
-        title="Work"
-        description="A collection of technical design and development Work. May contain incoherent ramblings."
+        title="Experience"
+        description="A collection of technical design and development Experience. May contain incoherent ramblings."
       />
       <Section className={styles.content}>
         {!isSingleColumn && (

@@ -46,7 +46,7 @@ import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
 
-const disciplines = ['Full-stack developer', 'Frontend developer', 'Solution engineer'];
+const disciplines = ['Full-stack', 'Frontend', 'Solution engineer'];
 
 export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);

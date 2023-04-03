@@ -26,6 +26,7 @@ const ArticlesPost = ({
   banner,
   categories,
   timecode,
+  link,
   index,
 }) => {
   const [hovered, setHovered] = useState(false);
@@ -67,40 +68,43 @@ const ArticlesPost = ({
           />
         </div>
       )}
-      <RouterLink href={`/articles/${slug}`} scroll={false}>
-        <a
-          className={styles.postLink}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >
-          <div className={styles.postDetails}>
-            <div aria-hidden className={styles.postDate}>
-              <Divider lineWidth="33%" notchWidth="64px" notchHeight="8px" />
-              {categories?.map((text, index) => (
-                <div className={styles.chipsArticle} key={index}>
-                  {text}
-                </div>
-              ))}
-            </div>
-
-            <Heading as="h2" level={featured ? 2 : 4}>
-              {title}
-            </Heading>
-
-            <Text size={featured ? 'l' : 's'} as="p">
-              {abstract}
-            </Text>
-            <div className={styles.postFooter}>
-              <Button secondary iconHoverShift icon="chevronRight" as="div">
-                Read
-              </Button>
-              <Text className={styles.timecode} size="s">
-                {timecode}
-              </Text>
-            </div>
+      {/* <RouterLink href={`${link}`} scroll={false}> */}
+      <a
+        href={`${link}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.postLink}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        <div className={styles.postDetails}>
+          <div aria-hidden className={styles.postDate}>
+            <Divider lineWidth="33%" notchWidth="64px" notchHeight="8px" />
+            {categories?.map((text, index) => (
+              <div className={styles.chipsArticle} key={index}>
+                {text}
+              </div>
+            ))}
           </div>
-        </a>
-      </RouterLink>
+
+          <Heading as="h2" level={featured ? 2 : 4}>
+            {title}
+          </Heading>
+
+          <Text size={featured ? 'l' : 's'} as="p">
+            {abstract}
+          </Text>
+          <div className={styles.postFooter}>
+            <Button secondary iconHoverShift icon="chevronRight" as="div">
+              Visit
+            </Button>
+            <Text className={styles.timecode} size="s">
+              {timecode}
+            </Text>
+          </div>
+        </div>
+      </a>
+      {/* </RouterLink> */}
       {featured && (
         <Text aria-hidden className={styles.postTag} size="s">
           477
@@ -165,21 +169,7 @@ export const Articles = ({ posts, featured }) => {
     }
   }, []);
 
-  const categories = [
-    'Academic Writing',
-    'Case Study',
-    'Medical Content Writing',
-    'Landing Page Copy',
-    'Service Page',
-    'Product Description',
-    'Procedure Page',
-    'Technical Writing',
-    'SEO Writing',
-    'Blog',
-    'Web Page Content',
-    'Newsletter',
-    'Reset All',
-  ];
+  const categories = ['API', 'Backend', 'Software Development', 'Reset All'];
 
   const { width } = useWindowSize();
   const singleColumnWidth = 1190;

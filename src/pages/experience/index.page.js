@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import { WORK_PATH, workFilePaths } from 'utils/mdx';
-export { Work as default } from './Work';
+export { Experience as default } from './Experience';
 
 export function getStaticProps() {
   const allPosts = workFilePaths.map(filePath => {
