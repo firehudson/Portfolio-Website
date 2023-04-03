@@ -6,7 +6,7 @@ export const socialLinks = [
   },
   {
     label: 'Medium',
-    url: 'https://medium.com/@saloni_kabra',
+    url: 'https://medium.com/@aditya.vaishanv2022',
     icon: 'medium',
   },
   {

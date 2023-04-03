@@ -7,9 +7,9 @@ export const Resume = () => {
     <div className={styles.resume}>
       <Post
         title="Resume"
-        href="https://raw.githubusercontent.com/Madhavkabra/Saloni-Content-Writer-Portfolio/fixes/article-pdf-services/src/assets/Dr.%20Saloni%20Kabra.pdf"
+        href="https://raw.githubusercontent.com/firehudson/Portfolio-Website/fix/content-and-features/src/assets/AdityaVaishnav_Resume.pdf"
       >
-        <PDFViewer pdfLink="https://raw.githubusercontent.com/Madhavkabra/Saloni-Content-Writer-Portfolio/fixes/article-pdf-services/src/assets/Dr.%20Saloni%20Kabra.pdf" />
+        <PDFViewer pdfLink="https://raw.githubusercontent.com/firehudson/Portfolio-Website/fix/content-and-features/src/assets/AdityaVaishnav_Resume.pdf" />
       </Post>
     </div>
   );
