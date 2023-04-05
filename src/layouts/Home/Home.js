@@ -1,54 +1,25 @@
-import gamestackTexture2Large from 'assets/gamestack-list.jpg';
-import gamestackTexture2Placeholder from 'assets/gamestack-list-placeholder.jpg';
-import gamestackTexture2 from 'assets/gamestack-list.jpg';
-import gamestackTextureLarge from 'assets/gamestack-login-large.jpg';
-import gamestackTexturePlaceholder from 'assets/gamestack-login-placeholder.jpg';
-import gamestackTexture from 'assets/gamestack-login.jpg';
 import sliceTexturePlaceholder from 'assets/slice-app-placeholder.jpg';
 import landingPage from 'assets/landingPage.jpg';
 import landingPageLarge from 'assets/landingPage-large.jpg';
-import technicalWriting from 'assets/technical-writing.jpg';
-import technicalWritingLarge from 'assets/technical-writing-large.jpg';
-import seoWriting from 'assets/seo-writing.jpg';
-import seoWritingLarge from 'assets/seo-writing-large.jpg';
-import blog from 'assets/blog.jpg';
-import blogLarge from 'assets/blog-large.jpg';
-import webPageContent from 'assets/webPageContent.jpg';
-import webPageContentLarge from 'assets/webPageContent-large.jpg';
-import newsletter from 'assets/newsletter.jpg';
-import newsletterLarge from 'assets/newsletter-large.jpg';
-import medicalContentWritingLarge from 'assets/medicalContentWriting-large.jpg';
-
 import performanceOptimization from 'assets/performanceOptimization.jpg';
 import performanceOptimizationLarge from 'assets/performanceOptimization-large.jpg';
-
 import pwaDevelopment from 'assets/pwaDevelopment.jpg';
 import pwaDevelopmentLarge from 'assets/pwaDevelopment-large.jpg';
-
 import customAppDevelopment from 'assets/customAppDevelopment.jpg';
 import customAppDevelopmentLarge from 'assets/customAppDevelopment-large.jpg';
 
-import procedurePage from 'assets/procedurePage.jpg';
-import procedurePageLarge from 'assets/procedurePage-large.jpg';
 import debug from 'assets/debug.jpg';
 // import debugLarge from 'assets/debug-large.jpg';
-import proofReading from 'assets/proofReading.jpg';
-import proofReadingLarge from 'assets/proofReading-large.jpg';
 
 import frontendArchitecture from 'assets/frontendArchitecture.jpg';
 import frontendArchitectureLarge from 'assets/frontendArchitecture-large.jpg';
 
-import academicWritingLarge from 'assets/academic-writing-large.jpg';
-import academicWriting from 'assets/academic-writing.png';
 import mobileResponsive from 'assets/mobileResponsive.jpg';
 // import mobileResponsiveLarge from 'assets/mobileResponsive-large.jpg';
 
 import crossBorderCompatiblity from 'assets/crossBorderCompatiblity.jpg';
 import crossBorderCompatiblityLarge from 'assets/crossBorderCompatiblity-large.jpg';
-import serverSide from 'assets/serverSide.jpg';
-// import serverSideLarge from 'assets/serverSide-large.jpg';
 import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
-import sprTexture from 'assets/spr-lesson-builder-dark.jpg';
 import { Footer } from 'components/Footer';
 import { Meta } from 'components/Meta';
 import { Intro } from 'layouts/Home/Intro';
@@ -71,12 +42,6 @@ export const Home = () => {
   const projectSix = useRef();
   const projectSeven = useRef();
   const projectEight = useRef();
-  const projectNine = useRef();
-  const projectTen = useRef();
-  const projectEleven = useRef();
-  const projectTwelve = useRef();
-  const projectThirteen = useRef();
-  const projectFourteen = useRef();
 
   const about = useRef();
 
@@ -91,12 +56,6 @@ export const Home = () => {
       projectSix,
       projectSeven,
       projectEight,
-      projectNine,
-      projectTen,
-      projectEleven,
-      projectTwelve,
-      projectThirteen,
-      projectFourteen,
       about,
     ];
 
@@ -151,133 +110,8 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Debugging and Testing"
-        description="Perform extensive testing and debugging to identify and fix any errors or issues with the web pages or application."
-        model={{
-          type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
-          textures: [
-            {
-              srcSet: [debug, debug],
-              placeholder: sliceTexturePlaceholder,
-            },
-          ],
-        }}
-      />
-      <ProjectSummary
-        id="project-2"
-        sectionRef={projectTwo}
-        visible={visibleSections.includes(projectTwo.current)}
-        index={2}
-        title="Performance Optimization"
-        description="Optimize web page performance to load quickly and efficiently while minimizing resource usage."
-        buttonText="View Case Studies"
-        buttonLink="/articles/?0=Case+Study"
-        model={{
-          type: 'laptop',
-          alt: 'Smart Sparrow lesson builder',
-          textures: [
-            {
-              srcSet: [performanceOptimization, performanceOptimizationLarge],
-              placeholder: sprTexturePlaceholder,
-            },
-          ],
-        }}
-      />
-      <ProjectSummary
-        id="project-3"
-        sectionRef={projectThree}
-        visible={visibleSections.includes(projectThree.current)}
-        index={3}
-        title="Mobile Responsiveness"
-        description="Optimize web pages for mobile devices to ensure they are easy to use and navigate on smaller screens."
-        buttonText="View Case Studies"
-        buttonLink="/articles/?0=Case+Study"
-        model={{
-          type: 'laptop',
-          alt: 'Smart Sparrow lesson builder',
-          textures: [
-            {
-              srcSet: [mobileResponsive, mobileResponsive],
-              placeholder: sprTexturePlaceholder,
-            },
-          ],
-        }}
-      />
-
-      <ProjectSummary
-        id="project-4"
-        alternate
-        sectionRef={projectFour}
-        visible={visibleSections.includes(projectFour.current)}
-        index={4}
-        title="Cross-Browser Compatibility"
-        description=" Ensure that web pages are compatible with different web browsers and operating systems, to ensure a consistent user experience across different devices and platforms."
-        buttonText="View Content"
-        buttonLink="/articles/?0=Medical+Content+Writing"
-        model={{
-          type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
-          textures: [
-            {
-              srcSet: [crossBorderCompatiblity, crossBorderCompatiblityLarge],
-              placeholder: sliceTexturePlaceholder,
-            },
-          ],
-        }}
-      />
-
-      <ProjectSummary
-        id="project-5"
-        sectionRef={projectFive}
-        visible={visibleSections.includes(projectFive.current)}
-        index={5}
-        title="User Interface Development"
-        description="Create intuitive, easy-to-use, and aesthetically pleasing user interfaces (UI) that users interact with."
-        buttonText="View Content"
-        buttonLink="/articles/?0=Landing+Page+Copy"
-        model={{
-          type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
-          textures: [
-            {
-              srcSet: [landingPage, landingPageLarge],
-              placeholder: sliceTexturePlaceholder,
-            },
-          ],
-        }}
-      />
-      <ProjectSummary
-        id="project-6"
-        alternate
-        sectionRef={projectSix}
-        visible={visibleSections.includes(projectSix.current)}
-        index={6}
-        title="Design Implementation"
-        description="Transform designs provided by web designers into functional web pages using HTML, CSS, and JavaScript."
-        buttonText="View Content"
-        buttonLink="/articles/?0=Landing+Page+Copy"
-        model={{
-          type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
-          textures: [
-            {
-              srcSet: [landingPage, landingPageLarge],
-              placeholder: sliceTexturePlaceholder,
-            },
-          ],
-        }}
-      />
-
-      <ProjectSummary
-        id="project-7"
-        sectionRef={projectSeven}
-        visible={visibleSections.includes(projectSeven.current)}
-        index={7}
         title="Front-end Architecture & Design"
-        description=" I specialize in creating clear, concise, and persuasive product descriptions for medical products. Whether it's medical devices, supplements, or pharmaceuticals, I help clients convey the benefits and features of their products in an easy-to-understand way."
-        buttonText="View Content"
-        buttonLink="/articles/?0=Product+Description"
+        description=" I specialize in creating visually appealing and intuitive user interface that engages and guides the user. This is achieved by carefully selecting the design elements and implementing effective communication with the back-end."
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',
@@ -290,15 +124,13 @@ export const Home = () => {
         }}
       />
       <ProjectSummary
-        id="project-8"
+        id="project-2"
         alternate
-        sectionRef={projectEight}
-        visible={visibleSections.includes(projectEight.current)}
-        index={8}
-        title="customAppDeveploment"
-        description="With my experience in medical writing, I create detailed and informative procedure pages that provide patients with step-by-step guidance on medical procedures. I help clients offer valuable resources to their patients and reduce the risk of confusion or complications."
-        buttonText="View Pages"
-        buttonLink="/articles/?0=Procedure+Page"
+        sectionRef={projectTwo}
+        visible={visibleSections.includes(projectTwo.current)}
+        index={2}
+        title="Custom App Development"
+        description="As a developer, I work closely with clients to identify their needs and goals, and then design and develop a solution that meets those needs. This involves creating wireframes, prototypes, and user interface (UI) designs that are visually appealing, intuitive, and user-friendly. "
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',
@@ -310,15 +142,33 @@ export const Home = () => {
           ],
         }}
       />
+
       <ProjectSummary
-        id="project-9"
-        sectionRef={projectNine}
-        visible={visibleSections.includes(projectNine.current)}
-        index={9}
+        id="project-3"
+        sectionRef={projectThree}
+        visible={visibleSections.includes(projectThree.current)}
+        index={3}
+        title="User Interface Development"
+        description="I believe that UI development and design is an essential part of any successful software application. It involves creating intuitive, easy-to-use, and aesthetically pleasing user interfaces (UI) that users interact with."
+        model={{
+          type: 'laptop',
+          alt: 'Annotating a biomedical image in the Slice app',
+          textures: [
+            {
+              srcSet: [landingPage, landingPageLarge],
+              placeholder: sliceTexturePlaceholder,
+            },
+          ],
+        }}
+      />
+      <ProjectSummary
+        id="project-4"
+        alternate
+        sectionRef={projectFour}
+        visible={visibleSections.includes(projectFour.current)}
+        index={4}
         title="PWA Development"
-        description="I offer technical writing services that are accurate, clear, and concise. From user manuals and operating procedures to regulatory documentation, I help clients communicate complex technical information to various audiences."
-        buttonText="View Content"
-        buttonLink="/articles/?0=Technical+Writing"
+        description="As a developer with experience in PWA development and design, I believe that Progressive Web Apps (PWAs) offer a unique opportunity to deliver a high-quality user experience across different platforms and devices"
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',
@@ -332,102 +182,75 @@ export const Home = () => {
       />
 
       <ProjectSummary
-        id="project-10"
+        id="project-5"
+        sectionRef={projectFive}
+        visible={visibleSections.includes(projectFive.current)}
+        index={5}
+        title="Debugging and Testing"
+        description="Perform extensive testing and debugging to identify and fix any errors or issues with the web pages or application.I use various tools and techniques to debug and test my code, including unit testing, integration testing, and acceptance testing."
+        model={{
+          type: 'laptop',
+          alt: 'Annotating a biomedical image in the Slice app',
+          textures: [
+            {
+              srcSet: [debug, debug],
+              placeholder: sliceTexturePlaceholder,
+            },
+          ],
+        }}
+      />
+      <ProjectSummary
+        id="project-6"
         alternate
-        sectionRef={projectTen}
-        visible={visibleSections.includes(projectTen.current)}
-        index={10}
-        title="SEO Writing"
-        description="I specialize in creating SEO-friendly medical content that helps businesses rank higher in search engine results. With my knowledge of keyword research and on-page optimization, I help clients attract more website traffic and generate more leads."
-        buttonText="View Content"
-        buttonLink="/articles/?0=SEO+Writing"
+        sectionRef={projectSix}
+        visible={visibleSections.includes(projectSix.current)}
+        index={6}
+        title="Performance Optimization"
+        description="Performance optimization is a critical aspect of software development that involves improving the speed, efficiency, and scalability of an application or website.I help to optimize web page performance to load quickly and efficiently while minimizing resource usage."
         model={{
           type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
+          alt: 'Smart Sparrow lesson builder',
           textures: [
             {
-              srcSet: [seoWriting, seoWritingLarge],
-              placeholder: sliceTexturePlaceholder,
+              srcSet: [performanceOptimization, performanceOptimizationLarge],
+              placeholder: sprTexturePlaceholder,
             },
           ],
         }}
       />
       <ProjectSummary
-        id="project-11"
-        sectionRef={projectEleven}
-        visible={visibleSections.includes(projectEleven.current)}
-        index={11}
-        title="Blog"
-        description="I provide engaging and informative blog content that covers a wide range of medical topics. From industry news and trends to patient education and lifestyle advice, I help clients establish themselves as thought leaders in the medical industry."
-        buttonText="View Blogs"
-        buttonLink="/articles/?0=Blog"
+        id="project-7"
+        sectionRef={projectSeven}
+        visible={visibleSections.includes(projectSeven.current)}
+        index={7}
+        title="Mobile Responsiveness"
+        description="Optimize web pages for mobile devices to ensure they are easy to use and navigate on smaller screens. I use various techniques and tools to ensure that my websites are mobile-responsive, including responsive design, flexible grid systems, and media queries."
         model={{
           type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
+          alt: 'Smart Sparrow lesson builder',
           textures: [
             {
-              srcSet: [blog, blogLarge],
-              placeholder: sliceTexturePlaceholder,
-            },
-          ],
-        }}
-      />
-      <ProjectSummary
-        id="project-12"
-        alternate
-        sectionRef={projectTwelve}
-        visible={visibleSections.includes(projectTwelve.current)}
-        index={12}
-        title="Web Page Content"
-        description="With my expertise in medical writing, I create informative and persuasive web page content that resonates with target audiences. I help clients improve their website's user experience and increase conversions through compelling and engaging copy."
-        buttonText="View Content"
-        buttonLink="/articles/?0=Web+Page+Content"
-        model={{
-          type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
-          textures: [
-            {
-              srcSet: [webPageContent, webPageContentLarge],
-              placeholder: sliceTexturePlaceholder,
-            },
-          ],
-        }}
-      />
-      <ProjectSummary
-        id="project-13"
-        sectionRef={projectThirteen}
-        visible={visibleSections.includes(projectThirteen.current)}
-        index={13}
-        title="Newsletter"
-        description="I offer professional medical newsletter writing services that help businesses stay connected with their audience. From industry updates and news to company updates and promotions, I help clients create informative, engaging, and effective newsletters."
-        buttonText="View Newsletters"
-        buttonLink="/articles/?0=Newsletter"
-        model={{
-          type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
-          textures: [
-            {
-              srcSet: [newsletter, newsletterLarge],
-              placeholder: sliceTexturePlaceholder,
+              srcSet: [mobileResponsive, mobileResponsive],
+              placeholder: sprTexturePlaceholder,
             },
           ],
         }}
       />
 
       <ProjectSummary
-        id="project-14"
+        id="project-8"
         alternate
-        sectionRef={projectFourteen}
-        visible={visibleSections.includes(projectFourteen.current)}
-        index={14}
-        title="Editing and Proofreading"
-        description="Editing and proofreading are essential steps in ensuring that your medical writing is accurate, clear, and polished. As an experienced editor and proofreader, I can help refine your work, checking for errors in grammar, spelling, and syntax, and ensuring that your writing meets the highest standards of clarity and precision."
+        sectionRef={projectEight}
+        visible={visibleSections.includes(projectEight.current)}
+        index={8}
+        title="Cross-Browser Compatibility"
+        description="Ensure that web pages are compatible with different web browsers and operating systems, to ensure a consistent user experience across different devices and platforms."
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',
           textures: [
             {
-              srcSet: [proofReading, proofReadingLarge],
+              srcSet: [crossBorderCompatiblity, crossBorderCompatiblityLarge],
               placeholder: sliceTexturePlaceholder,
             },
           ],
