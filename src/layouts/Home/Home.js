@@ -17,23 +17,34 @@ import webPageContent from 'assets/webPageContent.jpg';
 import webPageContentLarge from 'assets/webPageContent-large.jpg';
 import newsletter from 'assets/newsletter.jpg';
 import newsletterLarge from 'assets/newsletter-large.jpg';
-import medicalContentWriting from 'assets/medicalContentWriting.jpg';
 import medicalContentWritingLarge from 'assets/medicalContentWriting-large.jpg';
-import productEquipement from 'assets/productEquipement.jpg';
-import productEquipementLarge from 'assets/productEquipement-large.jpg';
+
+import performanceOptimization from 'assets/performanceOptimization.jpg';
+import performanceOptimizationLarge from 'assets/performanceOptimization-large.jpg';
+
+import pwaDevelopment from 'assets/pwaDevelopment.jpg';
+import pwaDevelopmentLarge from 'assets/pwaDevelopment-large.jpg';
+
+import customAppDevelopment from 'assets/customAppDevelopment.jpg';
+import customAppDevelopmentLarge from 'assets/customAppDevelopment-large.jpg';
+
 import procedurePage from 'assets/procedurePage.jpg';
 import procedurePageLarge from 'assets/procedurePage-large.jpg';
 import debug from 'assets/debug.jpg';
 // import debugLarge from 'assets/debug-large.jpg';
 import proofReading from 'assets/proofReading.jpg';
 import proofReadingLarge from 'assets/proofReading-large.jpg';
+
+import frontendArchitecture from 'assets/frontendArchitecture.jpg';
+import frontendArchitectureLarge from 'assets/frontendArchitecture-large.jpg';
+
 import academicWritingLarge from 'assets/academic-writing-large.jpg';
 import academicWriting from 'assets/academic-writing.png';
 import mobileResponsive from 'assets/mobileResponsive.jpg';
 // import mobileResponsiveLarge from 'assets/mobileResponsive-large.jpg';
 
-import crossBorderCompatiblity from 'assets/crossBorderCompatiblity.jpeg';
-// import crossBorderCompatiblityLarge from 'assets/crossBorderCompatiblity-large.jpg';
+import crossBorderCompatiblity from 'assets/crossBorderCompatiblity.jpg';
+import crossBorderCompatiblityLarge from 'assets/crossBorderCompatiblity-large.jpg';
 import serverSide from 'assets/serverSide.jpg';
 // import serverSideLarge from 'assets/serverSide-large.jpg';
 import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
@@ -167,7 +178,7 @@ export const Home = () => {
           alt: 'Smart Sparrow lesson builder',
           textures: [
             {
-              srcSet: [sprTexture, mobileResponsive],
+              srcSet: [performanceOptimization, performanceOptimizationLarge],
               placeholder: sprTexturePlaceholder,
             },
           ],
@@ -209,7 +220,7 @@ export const Home = () => {
           alt: 'Annotating a biomedical image in the Slice app',
           textures: [
             {
-              srcSet: [crossBorderCompatiblity, crossBorderCompatiblity],
+              srcSet: [crossBorderCompatiblity, crossBorderCompatiblityLarge],
               placeholder: sliceTexturePlaceholder,
             },
           ],
@@ -263,7 +274,7 @@ export const Home = () => {
         sectionRef={projectSeven}
         visible={visibleSections.includes(projectSeven.current)}
         index={7}
-        title="Product Description"
+        title="Front-end Architecture & Design"
         description=" I specialize in creating clear, concise, and persuasive product descriptions for medical products. Whether it's medical devices, supplements, or pharmaceuticals, I help clients convey the benefits and features of their products in an easy-to-understand way."
         buttonText="View Content"
         buttonLink="/articles/?0=Product+Description"
@@ -272,7 +283,7 @@ export const Home = () => {
           alt: 'Annotating a biomedical image in the Slice app',
           textures: [
             {
-              srcSet: [productEquipement, productEquipementLarge],
+              srcSet: [frontendArchitecture, frontendArchitectureLarge],
               placeholder: sliceTexturePlaceholder,
             },
           ],
@@ -284,7 +295,7 @@ export const Home = () => {
         sectionRef={projectEight}
         visible={visibleSections.includes(projectEight.current)}
         index={8}
-        title="Procedure Page"
+        title="customAppDeveploment"
         description="With my experience in medical writing, I create detailed and informative procedure pages that provide patients with step-by-step guidance on medical procedures. I help clients offer valuable resources to their patients and reduce the risk of confusion or complications."
         buttonText="View Pages"
         buttonLink="/articles/?0=Procedure+Page"
@@ -293,7 +304,7 @@ export const Home = () => {
           alt: 'Annotating a biomedical image in the Slice app',
           textures: [
             {
-              srcSet: [procedurePage, procedurePageLarge],
+              srcSet: [customAppDevelopment, customAppDevelopmentLarge],
               placeholder: sliceTexturePlaceholder,
             },
           ],
@@ -304,7 +315,7 @@ export const Home = () => {
         sectionRef={projectNine}
         visible={visibleSections.includes(projectNine.current)}
         index={9}
-        title="Technical Writing"
+        title="PWA Development"
         description="I offer technical writing services that are accurate, clear, and concise. From user manuals and operating procedures to regulatory documentation, I help clients communicate complex technical information to various audiences."
         buttonText="View Content"
         buttonLink="/articles/?0=Technical+Writing"
@@ -313,7 +324,7 @@ export const Home = () => {
           alt: 'Annotating a biomedical image in the Slice app',
           textures: [
             {
-              srcSet: [technicalWriting, technicalWritingLarge],
+              srcSet: [pwaDevelopment, pwaDevelopmentLarge],
               placeholder: sliceTexturePlaceholder,
             },
           ],
