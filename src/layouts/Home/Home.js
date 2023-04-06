@@ -15,7 +15,7 @@ import frontendArchitecture from 'assets/frontendArchitecture.jpg';
 import frontendArchitectureLarge from 'assets/frontendArchitecture-large.jpg';
 
 import mobileResponsive from 'assets/mobileResponsive.jpg';
-// import mobileResponsiveLarge from 'assets/mobileResponsive-large.jpg';
+import mobileResponsiveLarge from 'assets/mobileResponsive-large.jpg';
 
 import crossBorderCompatiblity from 'assets/crossBorderCompatiblity.jpg';
 import crossBorderCompatiblityLarge from 'assets/crossBorderCompatiblity-large.jpg';
@@ -28,7 +28,7 @@ import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
 
-const disciplines = ['Full-stack', 'Frontend', 'Solution engineer'];
+const disciplines = ['Full-stack', 'Frontend', 'Solution engineer', 'Solution Architect'];
 
 export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
@@ -230,7 +230,7 @@ export const Home = () => {
           alt: 'Smart Sparrow lesson builder',
           textures: [
             {
-              srcSet: [mobileResponsive, mobileResponsive],
+              srcSet: [mobileResponsive, mobileResponsiveLarge],
               placeholder: sprTexturePlaceholder,
             },
           ],

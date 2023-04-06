@@ -14,10 +14,10 @@ export function getStaticProps() {
     };
   });
 
-  const featured = allPosts.find(post => post.featured);
+  const featured = allPosts.find(post => post.featured) || null;
 
   const posts = allPosts
-    .filter(post => post.slug !== featured.slug)
+    .filter(post => post.slug !== featured?.slug)
     .sort((a, b) => {
       return new Date(a.date).getTime() - new Date(b.date).getTime();
     })
