@@ -9,7 +9,7 @@ import customAppDevelopment from 'assets/customAppDevelopment.jpg';
 import customAppDevelopmentLarge from 'assets/customAppDevelopment-large.jpg';
 
 import debug from 'assets/debug.jpg';
-// import debugLarge from 'assets/debug-large.jpg';
+import debugLarge from 'assets/debug-large.jpg';
 
 import frontendArchitecture from 'assets/frontendArchitecture.jpg';
 import frontendArchitectureLarge from 'assets/frontendArchitecture-large.jpg';
@@ -111,7 +111,7 @@ export const Home = () => {
         visible={visibleSections.includes(projectOne.current)}
         index={1}
         title="Front-end Architecture & Design"
-        description=" I specialize in creating visually appealing and intuitive user interface that engages and guides the user. This is achieved by carefully selecting the design elements and implementing effective communication with the back-end."
+        description="As a developer, I consider front-end architecture and design to be an essential aspect of web development. It involves creating a solid foundation for the client-side of a web application or website. I prioritize designing user-friendly interfaces, implementing efficient functionality, and ensuring seamless communication with the back-end."
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',
@@ -130,7 +130,7 @@ export const Home = () => {
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
         title="Custom App Development"
-        description="As a developer, I work closely with clients to identify their needs and goals, and then design and develop a solution that meets those needs. This involves creating wireframes, prototypes, and user interface (UI) designs that are visually appealing, intuitive, and user-friendly. "
+        description="As a developer, I work closely with clients to identify their needs and goals, and then design and develop a solution that meets those needs. This involves creating wireframes, prototypes, and user interface (UI) designs that are visually appealing, intuitive, and user-friendly. I also focus on creating a user-friendly interface that is easy to navigate and understand."
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',
@@ -149,7 +149,7 @@ export const Home = () => {
         visible={visibleSections.includes(projectThree.current)}
         index={3}
         title="User Interface Development"
-        description="I believe that UI development and design is an essential part of any successful software application. It involves creating intuitive, easy-to-use, and aesthetically pleasing user interfaces (UI) that users interact with."
+        description="I believe that UI development and design is an essential part of any successful software application. It involves creating intuitive, easy-to-use, and aesthetically pleasing user interfaces (UI) that users interact with. Throughout the development process, I continuously test and refine the UI to ensure that it meets the highest quality standards and delivers an exceptional user experience. "
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',
@@ -168,7 +168,7 @@ export const Home = () => {
         visible={visibleSections.includes(projectFour.current)}
         index={4}
         title="PWA Development"
-        description="As a developer with experience in PWA development and design, I believe that Progressive Web Apps (PWAs) offer a unique opportunity to deliver a high-quality user experience across different platforms and devices"
+        description="As a developer with experience in PWA development and design, I believe that Progressive Web Apps (PWAs) offer a unique opportunity to deliver a high-quality user experience across different platforms and devices. PWA development involves creating web applications that can be accessed through a web browser or installed on a user's device like a native app. "
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',
@@ -187,13 +187,13 @@ export const Home = () => {
         visible={visibleSections.includes(projectFive.current)}
         index={5}
         title="Debugging and Testing"
-        description="Perform extensive testing and debugging to identify and fix any errors or issues with the web pages or application.I use various tools and techniques to debug and test my code, including unit testing, integration testing, and acceptance testing."
+        description="I believe that testing and debugging are critical to ensuring the quality and reliability of software applications. I perform extensive testing and debugging to identify and fix any errors or issues with the web pages or application. I use various tools and techniques to debug and test my code, including unit testing, integration testing, and acceptance testing."
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',
           textures: [
             {
-              srcSet: [debug, debug],
+              srcSet: [debug, debugLarge],
               placeholder: sliceTexturePlaceholder,
             },
           ],
@@ -206,7 +206,7 @@ export const Home = () => {
         visible={visibleSections.includes(projectSix.current)}
         index={6}
         title="Performance Optimization"
-        description="Performance optimization is a critical aspect of software development that involves improving the speed, efficiency, and scalability of an application or website.I help to optimize web page performance to load quickly and efficiently while minimizing resource usage."
+        description="Performance optimization is a critical aspect of software development that involves improving the speed, efficiency, and scalability of an application or website.I help to optimize web page performance to load quickly and efficiently while minimizing resource usage.I use various techniques and tools to optimize the performance of my code, including minification, caching, compression, and lazy loading. "
         model={{
           type: 'laptop',
           alt: 'Smart Sparrow lesson builder',
@@ -224,7 +224,7 @@ export const Home = () => {
         visible={visibleSections.includes(projectSeven.current)}
         index={7}
         title="Mobile Responsiveness"
-        description="Optimize web pages for mobile devices to ensure they are easy to use and navigate on smaller screens. I use various techniques and tools to ensure that my websites are mobile-responsive, including responsive design, flexible grid systems, and media queries."
+        description="Optimize web pages for mobile devices to ensure they are easy to use and navigate on smaller screens. I use various techniques and tools to ensure that my websites are mobile-responsive, including responsive design, flexible grid systems, and media queries. I also test my websites on different devices and browsers to ensure that they are optimized for a wide range of user scenarios."
         model={{
           type: 'laptop',
           alt: 'Smart Sparrow lesson builder',
@@ -244,7 +244,7 @@ export const Home = () => {
         visible={visibleSections.includes(projectEight.current)}
         index={8}
         title="Cross-Browser Compatibility"
-        description="Ensure that web pages are compatible with different web browsers and operating systems, to ensure a consistent user experience across different devices and platforms."
+        description="Ensure that web pages are compatible with different web browsers and operating systems and to ensure a consistent user experience across different devices and platforms.I use various techniques and tools to ensure that my websites are cross-browser compatible, including validating code, using standardized CSS and HTML, and testing websites on different browsers and devices."
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',

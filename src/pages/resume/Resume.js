@@ -9,7 +9,7 @@ export const Resume = () => {
         title="Resume"
         href="https://raw.githubusercontent.com/firehudson/Portfolio-Website/fix/content-and-features/src/assets/AdityaVaishnav_Resume.pdf"
       >
-        <PDFViewer pdfLink="https://raw.githubusercontent.com/firehudson/Portfolio-Website/fix/content-and-features/src/assets/AdityaVaishnav_Resume.pdf" />
+        <PDFViewer resume={true} pdfLink="https://raw.githubusercontent.com/firehudson/Portfolio-Website/fix/content-and-features/src/assets/AdityaVaishnav_Resume.pdf" />
       </Post>
     </div>
   );
