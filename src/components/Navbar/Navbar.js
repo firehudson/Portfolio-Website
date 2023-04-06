@@ -154,21 +154,25 @@ export const Navbar = () => {
       <NavToggle onClick={() => dispatch({ type: 'toggleMenu' })} menuOpen={menuOpen} />
       <nav className={styles.nav}>
         <div className={styles.navList}>
-          {navLinks.map(({ label, pathname }) => (
-            <RouterLink href={pathname} scroll={false} key={label}>
-              <a
-                data-navbar-item
-                className={styles.navLink}
-                aria-current={getCurrent(pathname)}
-                onClick={handleNavItemClick}
-              >
-                {label}
-              </a>
-            </RouterLink>
-          ))}
+          <div className={styles.navList2}>
+            {navLinks.map(({ label, pathname }) => (
+              <RouterLink href={pathname} scroll={false} key={label}>
+                <a
+                  data-navbar-item
+                  className={styles.navLink}
+                  aria-current={getCurrent(pathname)}
+                  onClick={handleNavItemClick}
+                >
+                  {label}
+                </a>
+              </RouterLink>
+            ))}
+          </div>
         </div>
         <div className={styles.navIcons}>
-          <SocialMediaIcons desktop />
+          <div className={styles.navIcons2}>
+            <SocialMediaIcons desktop />
+          </div>
         </div>
       </nav>
       <Transition unmount in={menuOpen} timeout={msToNum(tokens.base.durationL)}>

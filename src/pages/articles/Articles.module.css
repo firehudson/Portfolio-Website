@@ -44,6 +44,7 @@
   display: grid;
   align-items: start;
   grid-template-columns: 1fr 55%;
+  /* 100% */
   padding-top: var(--verticalPadding);
   padding-bottom: var(--space4XL);
   padding-left: var(--space3XL);

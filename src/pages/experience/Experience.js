@@ -66,7 +66,6 @@ const ExperiencePost = ({
           />
         </div>
       )}
-      {/* <RouterLink href={`/Experience/${slug}`} scroll={false}> */}
       <a
         className={styles.postLink}
         onMouseEnter={handleMouseEnter}
@@ -89,14 +88,8 @@ const ExperiencePost = ({
           <Text size={featured ? 'l' : 's'} as="p">
             {abstract}
           </Text>
-          {/* <div className={styles.postFooter}>
-            <Button secondary iconHoverShift icon="chevronRight" as="div">
-              Visit
-            </Button>
-          </div> */}
         </div>
       </a>
-      {/* </RouterLink> */}
       {featured && (
         <Text aria-hidden className={styles.postTag} size="s">
           477

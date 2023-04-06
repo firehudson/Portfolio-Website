@@ -67,7 +67,6 @@ const ProjectPost = ({
           />
         </div>
       )}
-      {/* <RouterLink href={`/Project/${slug}`} scroll={false}> */}
       <a
         href={`${link}`}
         target="_blank"
@@ -100,7 +99,6 @@ const ProjectPost = ({
           </div>
         </div>
       </a>
-      {/* </RouterLink> */}
       {featured && (
         <Text aria-hidden className={styles.postTag} size="s">
           477

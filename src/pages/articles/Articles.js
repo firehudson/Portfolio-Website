@@ -68,7 +68,6 @@ const ArticlesPost = ({
           />
         </div>
       )}
-      {/* <RouterLink href={`${link}`} scroll={false}> */}
       <a
         href={`${link}`}
         target="_blank"
@@ -104,7 +103,6 @@ const ArticlesPost = ({
           </div>
         </div>
       </a>
-      {/* </RouterLink> */}
       
       {featured && (
         <Text aria-hidden className={styles.postTag} size="s">
