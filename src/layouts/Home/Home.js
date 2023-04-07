@@ -17,6 +17,10 @@ import frontendArchitectureLarge from 'assets/frontendArchitecture-large.jpg';
 import mobileResponsive from 'assets/mobileResponsive.jpg';
 import mobileResponsiveLarge from 'assets/mobileResponsive-large.jpg';
 
+import academicWritingLarge from 'assets/academic-writing-large.jpg';
+import academicWriting from 'assets/academic-writing.jpg';
+import gamestackTexturePlaceholder from 'assets/gamestack-login-placeholder.jpg';
+
 import crossBorderCompatiblity from 'assets/crossBorderCompatiblity.jpg';
 import crossBorderCompatiblityLarge from 'assets/crossBorderCompatiblity-large.jpg';
 import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
@@ -34,6 +38,7 @@ export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
   const [scrollIndicatorHidden, setScrollIndicatorHidden] = useState(false);
   const intro = useRef();
+  const projectZero = useRef();
   const projectOne = useRef();
   const projectTwo = useRef();
   const projectThree = useRef();
@@ -48,6 +53,7 @@ export const Home = () => {
   useEffect(() => {
     const sections = [
       intro,
+      projectZero,
       projectOne,
       projectTwo,
       projectThree,
@@ -105,6 +111,32 @@ export const Home = () => {
         disciplines={disciplines}
         scrollIndicatorHidden={scrollIndicatorHidden}
       />
+      <ProjectSummary
+        id="project-0"
+        alternate
+        sectionRef={projectZero}
+        visible={visibleSections.includes(projectZero.current)}
+        index={0}
+        title="Academic Writing"
+        description="With extensive knowledge of research and academic writing styles, I offer high-quality and well-researched academic writing services, including literature reviews, research papers, reports, etc."
+        buttonText="View Assignments"
+        buttonLink="articles/?0=Academic+Writing"
+        model={{
+          type: 'phone',
+          alt: 'Annotating a biomedical image in the Slice app',
+          textures: [
+            {
+              srcSet: [academicWriting, academicWritingLarge],
+              placeholder: sliceTexturePlaceholder,
+            },
+            {
+              srcSet: [academicWriting, academicWriting],
+              placeholder: gamestackTexturePlaceholder,
+            },
+          ],
+        }}
+      />
+
       <ProjectSummary
         id="project-1"
         sectionRef={projectOne}
