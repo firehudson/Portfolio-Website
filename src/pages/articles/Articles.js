@@ -46,70 +46,74 @@ const ArticlesPost = ({
   };
 
   return (
-    <article
-      className={styles.post}
-      data-featured={!!featured}
-      style={index !== undefined ? cssProps({ delay: index * 100 + 200 }) : undefined}
-    >
-      {featured && (
-        <Text className={styles.postLabel} size="s">
-          Featured
-        </Text>
-      )}
-      {featured && !!banner && (
-        <div className={styles.postImage}>
-          <Image
-            noPauseButton
-            play={!reduceMotion ? hovered : undefined}
-            src={{ src: banner }}
-            placeholder={{ src: `${banner.split('.')[0]}-placeholder.jpg` }}
-            alt=""
-            role="presentation"
-          />
-        </div>
-      )}
-      <a
-        href={`${link}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={styles.postLink}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
-        <div className={styles.postDetails}>
-          <div aria-hidden className={styles.postDate}>
-            <Divider lineWidth="33%" notchWidth="64px" notchHeight="8px" />
-            {categories?.map((text, index) => (
-              <div className={styles.chipsArticle} key={index}>
-                {text}
-              </div>
-            ))}
-          </div>
-
-          <Heading as="h2" level={featured ? 2 : 4}>
-            {title}
-          </Heading>
-
-          <Text size={featured ? 'l' : 's'} as="p">
-            {abstract}
-          </Text>
-          <div className={styles.postFooter}>
-            <Button secondary iconHoverShift icon="chevronRight" as="div">
-              Visit
-            </Button>
-            <Text className={styles.timecode} size="s">
-              {timecode}
+    <>
+      {link && (
+        <article
+          className={styles.post}
+          data-featured={!!featured}
+          style={index !== undefined ? cssProps({ delay: index * 100 + 200 }) : undefined}
+        >
+          {featured && (
+            <Text className={styles.postLabel} size="s">
+              Featured
             </Text>
-          </div>
-        </div>
-      </a>
-      
-      {featured && (
-        <Text aria-hidden className={styles.postTag} size="s">
-          477
-        </Text>
+          )}
+          {featured && !!banner && (
+            <div className={styles.postImage}>
+              <Image
+                noPauseButton
+                play={!reduceMotion ? hovered : undefined}
+                src={{ src: banner }}
+                placeholder={{ src: `${banner.split('.')[0]}-placeholder.jpg` }}
+                alt=""
+                role="presentation"
+              />
+            </div>
+          )}
+          <a
+            href={`${link}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.postLink}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            <div className={styles.postDetails}>
+              <div aria-hidden className={styles.postDate}>
+                <Divider lineWidth="33%" notchWidth="64px" notchHeight="8px" />
+                {categories?.map((text, index) => (
+                  <div className={styles.chipsArticle} key={index}>
+                    {text}
+                  </div>
+                ))}
+              </div>
+
+              <Heading as="h2" level={featured ? 2 : 4}>
+                {title}
+              </Heading>
+
+              <Text size={featured ? 'l' : 's'} as="p">
+                {abstract}
+              </Text>
+              <div className={styles.postFooter}>
+                <Button secondary iconHoverShift icon="chevronRight" as="div">
+                  Visit
+                </Button>
+                <Text className={styles.timecode} size="s">
+                  {timecode}
+                </Text>
+              </div>
+            </div>
+          </a>
+
+          {featured && (
+            <Text aria-hidden className={styles.postTag} size="s">
+              477
+            </Text>
+          )}
+        </article>
       )}
-    </article>
+    </>
   );
 };
 
