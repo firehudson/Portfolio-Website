@@ -212,7 +212,7 @@ export const Home = () => {
           alt: 'Smart Sparrow lesson builder',
           textures: [
             {
-              srcSet: [mobileResponsive, mobileResponsiveLarge],
+              srcSet: [performanceOptimization, performanceOptimizationLarge],
               placeholder: sprTexturePlaceholder,
             },
           ],
