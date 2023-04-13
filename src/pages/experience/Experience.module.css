@@ -281,7 +281,8 @@
     clip-path: var(--featuredPostClip);
 
     @media (--singleColumnWidth) {
-      padding-top: 50%;
+      padding-top: 15%;
+      padding-bottom:10%;
     }
 
     &::after {

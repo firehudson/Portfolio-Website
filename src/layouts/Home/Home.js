@@ -56,9 +56,6 @@ export const Home = () => {
   const projectFour = useRef();
   const projectFive = useRef();
   const projectSix = useRef();
-  // const projectSeven = useRef();
-  // const projectEight = useRef();
-
   const about = useRef();
 
   useEffect(() => {
@@ -70,8 +67,6 @@ export const Home = () => {
       projectFour,
       projectFive,
       projectSix,
-      // projectSeven,
-      // projectEight,
       about,
     ];
 
@@ -200,15 +195,15 @@ export const Home = () => {
         sectionRef={projectFive}
         visible={visibleSections.includes(projectFive.current)}
         index={5}
-        title="Debugging and Testing"
-        description="I believe that testing and debugging are critical to ensuring the quality and reliability of software applications. I perform extensive testing and debugging to identify and fix any errors or issues with the web pages or application. I use various tools and techniques to debug and test my code, including unit testing, integration testing, and acceptance testing."
+        title="Mobile Responsiveness"
+        description="Optimize web pages for mobile devices to ensure they are easy to use and navigate on smaller screens. I use various techniques and tools to ensure that my websites are mobile-responsive, including responsive design, flexible grid systems, and media queries. I also test my websites on different devices and browsers to ensure that they are optimized for a wide range of user scenarios."
         model={{
           type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
+          alt: 'Smart Sparrow lesson builder',
           textures: [
             {
-              srcSet: [debug, debugLarge],
-              placeholder: sliceTexturePlaceholder,
+              srcSet: [mobileResponsive, mobileResponsiveLarge],
+              placeholder: sprTexturePlaceholder,
             },
           ],
         }}
@@ -219,15 +214,15 @@ export const Home = () => {
         sectionRef={projectSix}
         visible={visibleSections.includes(projectSix.current)}
         index={6}
-        title="Performance Optimization"
-        description="Performance optimization is a critical aspect of software development that involves improving the speed, efficiency, and scalability of an application or website.I help to optimize web page performance to load quickly and efficiently while minimizing resource usage.I use various techniques and tools to optimize the performance of my code, including minification, caching, compression, and lazy loading. "
+        title="Debugging and Testing"
+        description="I believe that testing and debugging are critical to ensuring the quality and reliability of software applications. I perform extensive testing and debugging to identify and fix any errors or issues with the web pages or application. I use various tools and techniques to debug and test my code, including unit testing, integration testing, and acceptance testing."
         model={{
           type: 'laptop',
           alt: 'Smart Sparrow lesson builder',
           textures: [
             {
-              srcSet: [performanceOptimization, performanceOptimizationLarge],
-              placeholder: sprTexturePlaceholder,
+              srcSet:  [debug, debugLarge],
+              placeholder: sliceTexturePlaceholder,
             },
           ],
         }}
@@ -274,7 +269,7 @@ export const Home = () => {
         Other Service&#39;s
       </Heading>
       <div className={styles.buttonContainer}>
-        <Text className={styles.anchorTag}>Mobile Responsiveness</Text>
+        <Text className={styles.anchorTag}>Performance Optimization</Text>
         <Text className={styles.anchorTag}>Cross-Browser Compatibility</Text>
       </div>
 
