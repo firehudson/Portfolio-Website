@@ -7,20 +7,15 @@ import pwaDevelopment from 'assets/pwaDevelopment.jpg';
 import pwaDevelopmentLarge from 'assets/pwaDevelopment-large.jpg';
 import customAppDevelopment from 'assets/customAppDevelopment.jpg';
 import customAppDevelopmentLarge from 'assets/customAppDevelopment-large.jpg';
-
 import debug from 'assets/debug.jpg';
 import debugLarge from 'assets/debug-large.jpg';
-
 import frontendArchitecture from 'assets/frontendArchitecture.jpg';
 import frontendArchitectureLarge from 'assets/frontendArchitecture-large.jpg';
-
 import mobileResponsive from 'assets/mobileResponsive.jpg';
 import mobileResponsiveLarge from 'assets/mobileResponsive-large.jpg';
-
 import academicWritingLarge from 'assets/academic-writing-large.jpg';
 import academicWriting from 'assets/academic-writing.jpg';
 import gamestackTexturePlaceholder from 'assets/gamestack-login-placeholder.jpg';
-
 import crossBorderCompatiblity from 'assets/crossBorderCompatiblity.jpg';
 import crossBorderCompatiblityLarge from 'assets/crossBorderCompatiblity-large.jpg';
 import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
@@ -32,19 +27,9 @@ import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { Text } from 'components/Text';
 import { Heading } from 'components/Heading';
 import { useEffect, useRef, useState } from 'react';
-import { Link } from 'components/Link';
 import styles from './Home.module.css';
 
 const disciplines = ['Full-stack', 'Frontend', 'Solution engineer', 'Solution Architect'];
-
-const otherServices = [
-  { service: 'Case Study', link: '/articles/?0=Case+Study' },
-  { service: 'Procedure Page', link: '/articles/?0=Procedure+Page' },
-  { service: 'Technical Writing', link: '/articles/?0=Technical+Writing' },
-  { service: 'Blog', link: '/articles/?0=Blog' },
-  { service: 'Web Page Content', link: '/articles/?0=Web+Page+Content' },
-  { service: 'Newsletter', link: '/articles/?0=Newsletter' },
-];
 
 export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
@@ -227,44 +212,6 @@ export const Home = () => {
           ],
         }}
       />
-      {/* <ProjectSummary
-        id="project-7"
-        sectionRef={projectSeven}
-        visible={visibleSections.includes(projectSeven.current)}
-        index={7}
-        title="Mobile Responsiveness"
-        description="Optimize web pages for mobile devices to ensure they are easy to use and navigate on smaller screens. I use various techniques and tools to ensure that my websites are mobile-responsive, including responsive design, flexible grid systems, and media queries. I also test my websites on different devices and browsers to ensure that they are optimized for a wide range of user scenarios."
-        model={{
-          type: 'laptop',
-          alt: 'Smart Sparrow lesson builder',
-          textures: [
-            {
-              srcSet: [mobileResponsive, mobileResponsiveLarge],
-              placeholder: sprTexturePlaceholder,
-            },
-          ],
-        }}
-      />
-
-      <ProjectSummary
-        id="project-8"
-        alternate
-        sectionRef={projectEight}
-        visible={visibleSections.includes(projectEight.current)}
-        index={8}
-        title="Cross-Browser Compatibility"
-        description="Ensure that web pages are compatible with different web browsers and operating systems and to ensure a consistent user experience across different devices and platforms.I use various techniques and tools to ensure that my websites are cross-browser compatible, including validating code, using standardized CSS and HTML, and testing websites on different browsers and devices."
-        model={{
-          type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
-          textures: [
-            {
-              srcSet: [crossBorderCompatiblity, crossBorderCompatiblityLarge],
-              placeholder: sliceTexturePlaceholder,
-            },
-          ],
-        }}
-      /> */}
       <Heading className={styles.title} level={3}>
         Other Service&#39;s
       </Heading>

@@ -9,7 +9,6 @@ import { Section } from 'components/Section';
 import { Text } from 'components/Text';
 import { useReducedMotion } from 'framer-motion';
 import { useWindowSize } from 'hooks';
-import RouterLink from 'next/link';
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 import { formatDate } from 'utils/date';
