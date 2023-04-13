@@ -4,8 +4,8 @@ import { addons } from '@storybook/addons';
 addons.setConfig({
   theme: {
     ...themes.dark,
-    brandImage: 'https://hamishw.com/icon.svg',
+    brandImage: 'https://aditya-vaishnav.netlify.app/icon.svg',
     brandTitle: 'Aditya Vaishnav Components',
-    brandUrl: 'https://hamishw.com',
+    brandUrl: 'https://aditya-vaishnav.netlify.app',
   },
 });

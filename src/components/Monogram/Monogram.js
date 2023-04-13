@@ -5,7 +5,6 @@ import styles from './Monogram.module.css';
 export const Monogram = forwardRef(({ highlight, className, ...props }, ref) => {
   const id = useId();
   const clipId = `${id}monogram-clip`;
-
   return (
     <svg
       aria-hidden
@@ -26,10 +25,10 @@ export const Monogram = forwardRef(({ highlight, className, ...props }, ref) => 
 		l4.647-10.436l4.516,10.436H8.764z"/>
         </clipPath>
       </defs>
-      <rect clipPath={`url(#${clipId})`} width="100%" height="100%" />
-      {highlight && (
-        <g clipPath={`url(#${clipId})`}>
-          <rect className={styles.highlight} width="100%" height="100%" />
+  <rect clipPath={`url(#${clipId})`} width="100%" height="100%" />
+  {highlight && (
+    <g clipPath={`url(#${clipId})`}>
+      <rect className={styles.highlight} width="100%" height="100%" />
         </g>
       )}
     </svg>

@@ -28,6 +28,9 @@ import { Footer } from 'components/Footer';
 import { Meta } from 'components/Meta';
 import { Intro } from 'layouts/Home/Intro';
 import { Profile } from 'layouts/Home/Profile';
+import { Text } from 'components/Text';
+import { Heading } from 'components/Heading';
+import { Button } from 'components/Button';
 import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { Text } from 'components/Text';
 import { Heading } from 'components/Heading';
@@ -159,7 +162,6 @@ export const Home = () => {
           ],
         }}
       />
-
       <ProjectSummary
         id="project-3"
         sectionRef={projectThree}
@@ -197,7 +199,6 @@ export const Home = () => {
           ],
         }}
       />
-
       <ProjectSummary
         id="project-5"
         sectionRef={projectFive}
