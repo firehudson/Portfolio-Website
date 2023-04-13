@@ -9,9 +9,4 @@ export const socialLinks = [
     url: 'https://medium.com/@aditya.vaishanv2022',
     icon: 'medium',
   },
-  {
-    label: 'Email',
-    url: 'mailto:firehudson@gmail.com',
-    icon: 'email',
-  },
 ];
