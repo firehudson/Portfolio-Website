@@ -29,39 +29,50 @@ import { Meta } from 'components/Meta';
 import { Intro } from 'layouts/Home/Intro';
 import { Profile } from 'layouts/Home/Profile';
 import { ProjectSummary } from 'layouts/Home/ProjectSummary';
+import { Text } from 'components/Text';
+import { Heading } from 'components/Heading';
+import { Button } from 'components/Button';
 import { useEffect, useRef, useState } from 'react';
+import { Link } from 'components/Link';
 import styles from './Home.module.css';
 
 const disciplines = ['Full-stack', 'Frontend', 'Solution engineer', 'Solution Architect'];
+
+const otherServices = [
+  { service: 'Case Study', link: '/articles/?0=Case+Study' },
+  { service: 'Procedure Page', link: '/articles/?0=Procedure+Page' },
+  { service: 'Technical Writing', link: '/articles/?0=Technical+Writing' },
+  { service: 'Blog', link: '/articles/?0=Blog' },
+  { service: 'Web Page Content', link: '/articles/?0=Web+Page+Content' },
+  { service: 'Newsletter', link: '/articles/?0=Newsletter' },
+];
 
 export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
   const [scrollIndicatorHidden, setScrollIndicatorHidden] = useState(false);
   const intro = useRef();
-  const projectZero = useRef();
   const projectOne = useRef();
   const projectTwo = useRef();
   const projectThree = useRef();
   const projectFour = useRef();
   const projectFive = useRef();
   const projectSix = useRef();
-  const projectSeven = useRef();
-  const projectEight = useRef();
+  // const projectSeven = useRef();
+  // const projectEight = useRef();
 
   const about = useRef();
 
   useEffect(() => {
     const sections = [
       intro,
-      projectZero,
       projectOne,
       projectTwo,
       projectThree,
       projectFour,
       projectFive,
       projectSix,
-      projectSeven,
-      projectEight,
+      // projectSeven,
+      // projectEight,
       about,
     ];
 
@@ -111,32 +122,6 @@ export const Home = () => {
         disciplines={disciplines}
         scrollIndicatorHidden={scrollIndicatorHidden}
       />
-      <ProjectSummary
-        id="project-0"
-        alternate
-        sectionRef={projectZero}
-        visible={visibleSections.includes(projectZero.current)}
-        index={0}
-        title="Academic Writing"
-        description="With extensive knowledge of research and academic writing styles, I offer high-quality and well-researched academic writing services, including literature reviews, research papers, reports, etc."
-        buttonText="View Assignments"
-        buttonLink="articles/?0=Academic+Writing"
-        model={{
-          type: 'phone',
-          alt: 'Annotating a biomedical image in the Slice app',
-          textures: [
-            {
-              srcSet: [academicWriting, academicWritingLarge],
-              placeholder: sliceTexturePlaceholder,
-            },
-            {
-              srcSet: [academicWriting, academicWriting],
-              placeholder: gamestackTexturePlaceholder,
-            },
-          ],
-        }}
-      />
-
       <ProjectSummary
         id="project-1"
         sectionRef={projectOne}
@@ -250,7 +235,7 @@ export const Home = () => {
           ],
         }}
       />
-      <ProjectSummary
+      {/* <ProjectSummary
         id="project-7"
         sectionRef={projectSeven}
         visible={visibleSections.includes(projectSeven.current)}
@@ -287,7 +272,14 @@ export const Home = () => {
             },
           ],
         }}
-      />
+      /> */}
+      <Heading className={styles.title} level={3}>
+        Other Service&#39;s
+      </Heading>
+      <div className={styles.buttonContainer}>
+        <Text className={styles.anchorTag}>Mobile Responsiveness</Text>
+        <Text className={styles.anchorTag}>Cross-Browser Compatibility</Text>
+      </div>
 
       <Profile
         sectionRef={about}

@@ -196,11 +196,11 @@ export const Experience = ({ posts, featured }) => {
         )
           return <ExperiencePost key={slug} slug={slug} index={index} {...post} />;
       })}
-      {Array(2)
+      {/* {Array(2)
         .fill()
         .map((skeleton, index) => (
           <SkeletonPost key={index} />
-        ))}
+        ))} */}
     </div>
   );
 
