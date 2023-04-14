@@ -1,61 +1,35 @@
-import gamestackTexture2Large from 'assets/gamestack-list-large.jpg';
-import gamestackTexture2Placeholder from 'assets/gamestack-list-placeholder.jpg';
-import gamestackTexture2 from 'assets/gamestack-list.jpg';
-import gamestackTextureLarge from 'assets/gamestack-login-large.jpg';
-import gamestackTexturePlaceholder from 'assets/gamestack-login-placeholder.jpg';
-import gamestackTexture from 'assets/gamestack-login.jpg';
-import sliceTextureLarge from 'assets/slice-app-large.jpg';
 import sliceTexturePlaceholder from 'assets/slice-app-placeholder.jpg';
-import sliceTexture from 'assets/slice-app.jpg';
-import sprTextureLarge from 'assets/spr-lesson-builder-dark-large.jpg';
-import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
-import sprTexture from 'assets/spr-lesson-builder-dark.jpg';
-import medicalContentWriting from 'assets/medicalContentWriting.jpg';
-import medicalContentWritingLarge from 'assets/medicalContentWriting-large.jpg';
 import landingPage from 'assets/landingPage.jpg';
 import landingPageLarge from 'assets/landingPage-large.jpg';
-import productEquipement from 'assets/productEquipement.jpg';
-import productEquipementLarge from 'assets/productEquipement-large.jpg';
-import procedurePage from 'assets/procedurePage.jpg';
-import procedurePageLarge from 'assets/procedurePage-large.jpg';
-import technicalWriting from 'assets/technical-writing.jpg';
-import technicalWritingLarge from 'assets/technical-writing-large.jpg';
-import healthCareProfessional from 'assets/healthCareProfessional.jpg';
-import healthCareProfessionalLarge from 'assets/healthCareProfessional-large.jpg';
+import performanceOptimization from 'assets/performanceOptimization.jpg';
+import performanceOptimizationLarge from 'assets/performanceOptimization-large.jpg';
+import pwaDevelopment from 'assets/pwaDevelopment.jpg';
+import pwaDevelopmentLarge from 'assets/pwaDevelopment-large.jpg';
+import customAppDevelopment from 'assets/customAppDevelopment.jpg';
+import customAppDevelopmentLarge from 'assets/customAppDevelopment-large.jpg';
+import debug from 'assets/debug.jpg';
+import debugLarge from 'assets/debug-large.jpg';
+import frontendArchitecture from 'assets/frontendArchitecture.jpg';
+import frontendArchitectureLarge from 'assets/frontendArchitecture-large.jpg';
+import mobileResponsive from 'assets/mobileResponsive.jpg';
+import mobileResponsiveLarge from 'assets/mobileResponsive-large.jpg';
 import academicWritingLarge from 'assets/academic-writing-large.jpg';
 import academicWriting from 'assets/academic-writing.jpg';
-import seoWriting from 'assets/seo-writing.jpg';
-import seoWritingLarge from 'assets/seo-writing-large.jpg';
+import gamestackTexturePlaceholder from 'assets/gamestack-login-placeholder.jpg';
+import crossBorderCompatiblity from 'assets/crossBorderCompatiblity.jpg';
+import crossBorderCompatiblityLarge from 'assets/crossBorderCompatiblity-large.jpg';
+import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
 import { Footer } from 'components/Footer';
 import { Meta } from 'components/Meta';
 import { Intro } from 'layouts/Home/Intro';
 import { Profile } from 'layouts/Home/Profile';
+import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { Text } from 'components/Text';
 import { Heading } from 'components/Heading';
-import { Button } from 'components/Button';
-import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
-import { Link } from 'components/Link';
 import styles from './Home.module.css';
 
-const disciplines = [
-  'Doctor',
-  'Academic Writer',
-  'Medical Content Writer',
-  'Technical Writer',
-  'SEO Content Writer',
-  'Website Content Writer',
-  'Blogger',
-];
-
-const otherServices = [
-  { service: 'Case Study', link: '/articles/?0=Case+Study' },
-  { service: 'Procedure Page', link: '/articles/?0=Procedure+Page' },
-  { service: 'Technical Writing', link: '/articles/?0=Technical+Writing' },
-  { service: 'Blog', link: '/articles/?0=Blog' },
-  { service: 'Web Page Content', link: '/articles/?0=Web+Page+Content' },
-  { service: 'Newsletter', link: '/articles/?0=Newsletter' },
-];
+const disciplines = ['Full-stack', 'Frontend', 'Solution engineer', 'Solution Architect'];
 
 export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
@@ -117,8 +91,8 @@ export const Home = () => {
   return (
     <div className={styles.home}>
       <Meta
-        title="Writer + Healthcare Provider"
-        description="Design portfolio of Dr. Saloni Kabra — a product designer working on web & mobile
+        title="Software Developer"
+        description="Design portfolio of Aditya Vaishnav — a product designer working on web & mobile
           apps with a focus on motion, experience design, and accessibility."
       />
       <Intro
@@ -129,44 +103,36 @@ export const Home = () => {
       />
       <ProjectSummary
         id="project-1"
-        alternate
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Academic Writing"
-        description="With extensive knowledge of research and academic writing styles, I offer high-quality and well-researched academic writing services, including literature reviews, research papers, reports, etc."
-        buttonText="View Assignments"
-        buttonLink="articles/?0=Academic+Writing"
+        title="Front-end Architecture & Design"
+        description="As a developer, I consider front-end architecture and design to be an essential aspect of web development. It involves creating a solid foundation for the client-side of a web application or website. I prioritize designing user-friendly interfaces, implementing efficient functionality, and ensuring seamless communication with the back-end."
         model={{
-          type: 'phone',
+          type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',
           textures: [
             {
-              srcSet: [academicWriting, academicWritingLarge],
+              srcSet: [frontendArchitecture, frontendArchitectureLarge],
               placeholder: sliceTexturePlaceholder,
-            },
-            {
-              srcSet: [academicWriting, academicWriting],
-              placeholder: gamestackTexturePlaceholder,
             },
           ],
         }}
       />
       <ProjectSummary
         id="project-2"
+        alternate
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Medical Content Writing"
-        description="I provide professional medical content writing services that are accurate, informative, and engaging. From blog posts and articles to social media content and website copy, I help clients communicate complex medical information in an accessible and easy-to-understand way."
-        buttonText="View Content"
-        buttonLink="/articles/?0=Medical+Content+Writing"
+        title="Custom App Development"
+        description="As a developer, I work closely with clients to identify their needs and goals, and then design and develop a solution that meets those needs. This involves creating wireframes, prototypes, and user interface (UI) designs that are visually appealing, intuitive, and user-friendly. I also focus on creating a user-friendly interface that is easy to navigate and understand."
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',
           textures: [
             {
-              srcSet: [medicalContentWriting, medicalContentWritingLarge],
+              srcSet: [customAppDevelopment, customAppDevelopmentLarge],
               placeholder: sliceTexturePlaceholder,
             },
           ],
@@ -177,10 +143,8 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Landing Page Copy"
-        description="As a medical writer, I create compelling landing page copy that highlights the benefits of medical products and services. I help businesses convert website visitors into leads and customers through persuasive and engaging copy."
-        buttonText="View Content"
-        buttonLink="/articles/?0=Landing+Page+Copy"
+        title="User Interface Development"
+        description="I believe that UI development and design is an essential part of any successful software application. It involves creating intuitive, easy-to-use, and aesthetically pleasing user interfaces (UI) that users interact with. Throughout the development process, I continuously test and refine the UI to ensure that it meets the highest quality standards and delivers an exceptional user experience. "
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',
@@ -198,21 +162,15 @@ export const Home = () => {
         sectionRef={projectFour}
         visible={visibleSections.includes(projectFour.current)}
         index={4}
-        title="Service Page"
-        description="With my expertise in medical writing, I craft informative and persuasive service pages that highlight the unique benefits of medical services. I help clients differentiate themselves from competitors and drive more website traffic."
-        buttonText="View Content"
-        buttonLink="/articles/?0=Service+Page"
+        title="PWA Development"
+        description="As a developer with experience in PWA development and design, I believe that Progressive Web Apps (PWAs) offer a unique opportunity to deliver a high-quality user experience across different platforms and devices. PWA development involves creating web applications that can be accessed through a web browser or installed on a user's device like a native app. "
         model={{
-          type: 'phone',
-          alt: 'App login screen',
+          type: 'laptop',
+          alt: 'Annotating a biomedical image in the Slice app',
           textures: [
             {
-              srcSet: [gamestackTexture, gamestackTextureLarge],
-              placeholder: gamestackTexturePlaceholder,
-            },
-            {
-              srcSet: [gamestackTexture2, gamestackTexture2Large],
-              placeholder: gamestackTexture2Placeholder,
+              srcSet: [pwaDevelopment, pwaDevelopmentLarge],
+              placeholder: sliceTexturePlaceholder,
             },
           ],
         }}
@@ -222,17 +180,15 @@ export const Home = () => {
         sectionRef={projectFive}
         visible={visibleSections.includes(projectFive.current)}
         index={5}
-        title="Product Description"
-        description=" I specialize in creating clear, concise, and persuasive product descriptions for medical products. Whether it's medical devices, supplements, or pharmaceuticals, I help clients convey the benefits and features of their products in an easy-to-understand way."
-        buttonText="View Content"
-        buttonLink="/articles/?0=Product+Description"
+        title="Mobile Responsiveness"
+        description="Optimize web pages for mobile devices to ensure they are easy to use and navigate on smaller screens. I use various techniques and tools to ensure that my websites are mobile-responsive, including responsive design, flexible grid systems, and media queries. I also test my websites on different devices and browsers to ensure that they are optimized for a wide range of user scenarios."
         model={{
           type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
+          alt: 'Smart Sparrow lesson builder',
           textures: [
             {
-              srcSet: [productEquipement, productEquipementLarge],
-              placeholder: sliceTexturePlaceholder,
+              srcSet: [mobileResponsive, mobileResponsiveLarge],
+              placeholder: sprTexturePlaceholder,
             },
           ],
         }}
@@ -243,33 +199,25 @@ export const Home = () => {
         sectionRef={projectSix}
         visible={visibleSections.includes(projectSix.current)}
         index={6}
-        title="SEO Writing"
-        description="I specialize in creating SEO-friendly medical content that helps businesses rank higher in search engine results. With my knowledge of keyword research and on-page optimization, I help clients attract more website traffic and generate more leads."
-        buttonText="View Content"
-        buttonLink="/articles/?0=SEO+Writing"
+        title="Debugging and Testing"
+        description="I believe that testing and debugging are critical to ensuring the quality and reliability of software applications. I perform extensive testing and debugging to identify and fix any errors or issues with the web pages or application. I use various tools and techniques to debug and test my code, including unit testing, integration testing, and acceptance testing."
         model={{
           type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
+          alt: 'Smart Sparrow lesson builder',
           textures: [
             {
-              srcSet: [seoWriting, seoWritingLarge],
+              srcSet:  [debug, debugLarge],
               placeholder: sliceTexturePlaceholder,
             },
           ],
         }}
       />
-
       <Heading className={styles.title} level={3}>
         Other Service&#39;s
       </Heading>
       <div className={styles.buttonContainer}>
-        <Text className={styles.anchorTag}>Healthcare professional</Text>
-        {otherServices.map((data, index) => (
-          <div className={styles.linkTag} key={index}>
-            <Link href={data.link}>{data.service}</Link>
-          </div>
-        ))}
-        <Text className={styles.anchorTag}>Editing and Proofreading</Text>
+        <Text className={styles.anchorTag}>Performance Optimization</Text>
+        <Text className={styles.anchorTag}>Cross-Browser Compatibility</Text>
       </div>
 
       <Profile

@@ -33,11 +33,3 @@
   }
 
 }
-
-.linkTag {
-  margin-top: 5px;
-
-  @media (--mediaMobile) {
-    margin: 0px;
-  }
-}

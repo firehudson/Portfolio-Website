@@ -20,33 +20,42 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      Hi, I&#39;m Dr. Saloni, a doctor and professional writer with over five years of
-      experience in the healthcare industry. I&#39;m currently working with HealthOk,
-      where I combine my passion for helping people live healthier lives with my writing
-      skills to communicate important health information in a clear, concise way. I&#39;ve
-      had the opportunity to work with a diverse range of patients, from children to
-      seniors, and I find nothing more rewarding than making a positive impact on
-      someone&#39;s health and wellbeing.
+      ⭐I am a highly skilled technologist with over 7+ years of experience in developing
+      and delivering modern-day applications for web and mobile platforms. My passion for
+      technology and design has led me to explore various areas, including console games,
+      gadgets, and computers.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      In addition to my work at HealthOk, I am also a freelance writer who has worked with
-      clients from all over the world. Whether it&#39;s academic writing, medical writing,
-      product descriptions, or technical writing, I always strive to deliver content that
-      is well-researched, informative, and engaging. My experience includes creating
-      social media posts, developing content strategies, generating landing page copy, and
-      more.
+      ⭐I own an experienced technologist proficient in the following technologies:
+      <Text data-visible={visible} size="l" as="p">
+        ✔️ Node.js
+      </Text>
+      <Text data-visible={visible} size="l" as="p">
+        ✔️ Docker
+      </Text>
+      <Text data-visible={visible} size="l" as="p">
+        ✔️ React
+      </Text>
+      <Text data-visible={visible} size="l" as="p">
+        ✔️ Redux
+      </Text>
+      <Text data-visible={visible} size="l" as="p">
+        ✔️ SQL and NoSQL databases
+      </Text>
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      Apart from clinical services and writing, some other activities that I love to do!
-      <Text data-visible={visible} size="l" as="p">
-        🎯 Travel
-      </Text>
-      <Text data-visible={visible} size="l" as="p">
-        🎯 Playing Chess
-      </Text>
-      <Text data-visible={visible} size="l" as="p">
-        🎯 Singing
-      </Text>
+      ⭐I have also gained extensive experience in developing customized, location-based
+      applications. Over the past seven years, I have successfully designed and delivered
+      several location-based apps, each with unique features and functionalities. My
+      experience in this area has equipped me with the ability to understand complex data
+      and translate it into user-friendly interfaces that provide an exceptional user
+      experience.
+    </Text>
+    <Text className={styles.description} data-visible={visible} size="l" as="p">
+      ⭐In summary, with over seven years of experience, I possess a wide range of
+      technical skills and expertise in developing and delivering modern-day apps for both
+      web and mobile platforms. I am passionate about technology and design, and I am
+      always eager to learn and explore new areas to enhance my skills and knowledge.
     </Text>
   </Fragment>
 );

@@ -9,14 +9,11 @@ import { Section } from 'components/Section';
 import { Text } from 'components/Text';
 import { useReducedMotion } from 'framer-motion';
 import { useWindowSize } from 'hooks';
-import RouterLink from 'next/link';
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 import { formatDate } from 'utils/date';
 import { classes, cssProps } from 'utils/style';
 import { Chips } from 'components/Chips';
-import Avatar from '../../components/Icon/svg/avatar.svg';
-import FilledStar from '../../components/Icon/svg/filledStar.svg';
 import styles from './Articles.module.css';
 
 const ArticlesPost = ({
@@ -28,7 +25,7 @@ const ArticlesPost = ({
   banner,
   categories,
   timecode,
-  review,
+  link,
   index,
 }) => {
   const [hovered, setHovered] = useState(false);
@@ -48,31 +45,34 @@ const ArticlesPost = ({
   };
 
   return (
-    <article
-      className={styles.post}
-      data-featured={!!featured}
-      style={index !== undefined ? cssProps({ delay: index * 100 + 200 }) : undefined}
-    >
-      {featured && (
-        <Text className={styles.postLabel} size="s">
-          Featured
-        </Text>
-      )}
-      {featured && !!banner && (
-        <div className={styles.postImage}>
-          <Image
-            noPauseButton
-            play={!reduceMotion ? hovered : undefined}
-            src={{ src: banner }}
-            placeholder={{ src: `${banner.split('.')[0]}-placeholder.jpg` }}
-            alt=""
-            role="presentation"
-          />
-        </div>
-      )}
-      {!featured && (
-        <RouterLink href={`/articles/${slug}`} scroll={false}>
+    <>
+      {link && (
+        <article
+          className={styles.post}
+          data-featured={!!featured}
+          style={index !== undefined ? cssProps({ delay: index * 100 + 200 }) : undefined}
+        >
+          {featured && (
+            <Text className={styles.postLabel} size="s">
+              Featured
+            </Text>
+          )}
+          {featured && !!banner && (
+            <div className={styles.postImage}>
+              <Image
+                noPauseButton
+                play={!reduceMotion ? hovered : undefined}
+                src={{ src: banner }}
+                placeholder={{ src: `${banner.split('.')[0]}-placeholder.jpg` }}
+                alt=""
+                role="presentation"
+              />
+            </div>
+          )}
           <a
+            href={`${link}`}
+            target="_blank"
+            rel="noopener noreferrer"
             className={styles.postLink}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
@@ -96,7 +96,7 @@ const ArticlesPost = ({
               </Text>
               <div className={styles.postFooter}>
                 <Button secondary iconHoverShift icon="chevronRight" as="div">
-                  Read
+                  Visit
                 </Button>
                 <Text className={styles.timecode} size="s">
                   {timecode}
@@ -104,53 +104,15 @@ const ArticlesPost = ({
               </div>
             </div>
           </a>
-        </RouterLink>
-      )}
-      {featured && (
-        <div className={classes(styles.postLink, styles.reviewContainer)}>
-          <Heading className={styles.heading} level={5} as="h1">
-            Reviews
-          </Heading>
 
-          {review.map((data, index) => (
-            <div className={styles.reviewDiv} key={index}>
-              <Text as="div" size="s" className={styles.reviewSubHeading}>
-                {review[index][3]}
-              </Text>
-              <div className={styles.reviewAvatarTextDiv}>
-                <Avatar height="3em" width="3em" />
-                <div>
-                  <Text as="div" size="s">
-                    {review[index][0]}
-                  </Text>
-                  <div className={styles.reviewRating}>
-                    <Text as="span" size="s">
-                      {review[index][1]}
-                    </Text>
-                    {[...Array(Number(review[index][1][0])).keys()].map((data, index) => (
-                      <FilledStar color="yellow" key={index} />
-                    ))}
-                  </div>
-                </div>
-              </div>
-              <Text as="div" className={styles.reviewText}>
-                {review[index][2]}
-              </Text>
-              <Divider
-                notchWidth="64px"
-                notchHeight="5px"
-                className={styles.reviewDivider}
-              />
-            </div>
-          ))}
-        </div>
+          {featured && (
+            <Text aria-hidden className={styles.postTag} size="s">
+              477
+            </Text>
+          )}
+        </article>
       )}
-      {featured && (
-        <Text aria-hidden className={styles.postTag} size="s">
-          477
-        </Text>
-      )}
-    </article>
+    </>
   );
 };
 
@@ -209,21 +171,7 @@ export const Articles = ({ posts, featured }) => {
     }
   }, []);
 
-  const categories = [
-    'Academic Writing',
-    'Case Study',
-    'Medical Content Writing',
-    'Landing Page Copy',
-    'Service Page',
-    'Product Description',
-    'Procedure Page',
-    'Technical Writing',
-    'SEO Writing',
-    'Blog',
-    'Web Page Content',
-    'Newsletter',
-    'Reset All',
-  ];
+  const categories = ['API', 'Backend', 'Software Development', 'Reset All'];
 
   const { width } = useWindowSize();
   const singleColumnWidth = 1190;

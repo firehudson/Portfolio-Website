@@ -5,9 +5,10 @@ import styles from './Chips.module.css';
 
 export const Chips = ({ title, selected, selectedCategories, setSelectedCategories }) => {
   const router = useRouter();
+  const urlPath = router.asPath;
 
   useEffect(() => {
-    router.push(`/articles?filter`, { query: selectedCategories });
+    router.push(`${urlPath}?filter`, { query: selectedCategories });
   }, [selectedCategories]);
 
   const handleClickOnCategory = () => {

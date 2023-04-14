@@ -7,8 +7,8 @@ export default {
 
 export const Default = () => (
   <StoryContainer style={{ fontSize: 18 }}>
-    <Link href="https://salonikabra.netlify.app">Primary link</Link>
-    <Link secondary href="https://salonikabra.netlify.app">
+    <Link href="https://aditya-vaishnav.netlify.app">Primary link</Link>
+    <Link secondary href="https://aditya-vaishnav.netlify.app">
       Secondary link
     </Link>
   </StoryContainer>

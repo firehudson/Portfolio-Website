@@ -4,8 +4,8 @@ import { addons } from '@storybook/addons';
 addons.setConfig({
   theme: {
     ...themes.dark,
-    brandImage: 'https://salonikabra.netlify.app/icon.svg',
-    brandTitle: 'Dr. Saloni Kabra Components',
-    brandUrl: 'https://salonikabra.netlify.app',
+    brandImage: 'https://aditya-vaishnav.netlify.app/icon.svg',
+    brandTitle: 'Aditya Vaishnav Components',
+    brandUrl: 'https://aditya-vaishnav.netlify.app',
   },
 });

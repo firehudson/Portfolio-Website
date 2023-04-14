@@ -1,12 +1,12 @@
 export const socialLinks = [
   {
     label: 'Linkedin',
-    url: 'https://www.linkedin.com/in/dr-saloni-kabra-b79311170',
+    url: 'https://in.linkedin.com/in/ady-vaishnav',
     icon: 'linkedin',
   },
   {
     label: 'Medium',
-    url: 'https://medium.com/@saloni_kabra',
+    url: 'https://medium.com/@aditya.vaishanv2022',
     icon: 'medium',
   },
 ];

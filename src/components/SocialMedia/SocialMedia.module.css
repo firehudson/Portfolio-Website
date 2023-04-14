@@ -2,9 +2,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: var(--spaceS);
+  /* padding: var(--spaceS); */
   width: var(--space2XL);
-  height: var(--space2XL);
+  /* height: var(--space2XL); */
   color: var(--colorTextLight);
   transition: color var(--durationM) var(--bezierFastoutSlowin);
 

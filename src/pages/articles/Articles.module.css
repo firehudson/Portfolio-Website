@@ -44,6 +44,7 @@
   display: grid;
   align-items: start;
   grid-template-columns: 1fr 55%;
+  /* 100% */
   padding-top: var(--verticalPadding);
   padding-bottom: var(--space4XL);
   padding-left: var(--space3XL);
@@ -280,6 +281,10 @@
     padding: var(--featuredPostPadding);
     clip-path: var(--featuredPostClip);
 
+    @media (--singleColumnWidth) {
+      padding-top: 50%;
+    }
+
     &::after {
       content: '';
       position: absolute;
@@ -296,41 +301,6 @@
       }
     }
   }
-}
-
-.reviewContainer {
-  display: block;
-  overflow: auto;
-}
-
-.reviewSubHeading {
-  font-weight: 600 !important;
-  padding-bottom: 5px;
-}
-
-.reviewText {
-  margin-top: 10px;
-}
-
-.reviewDiv {
-  margin-bottom: 10px;
-  margin-top: 20px;
-}
-
-.reviewDivider {
-  margin-top: 15px;
-  margin-bottom: 20px;
-}
-
-.reviewAvatarTextDiv {
-  display: flex;
-  gap: 10px;
-}
-
-.reviewRating {
-  display: flex;
-  align-items: center;
-  gap: 5px;
 }
 
 .postDate {
