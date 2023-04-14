@@ -10,7 +10,7 @@ _______________________________________________________________________________
 
 DEVELOPER
 
-Madhav Kabra
+Aditya Vaishnav
 Hand crafted design & web development
 
 Design tools:
@@ -18,7 +18,7 @@ Figma
 Photoshop
 Blender
 
-github.com/madhavkabra
+github.com/firehudson
 
 _______________________________________________________________________________
 
