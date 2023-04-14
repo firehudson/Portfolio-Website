@@ -18,7 +18,7 @@ export const Meta = ({ title, description, prefix = name, ogImage = defaultOgIma
         name="keywords"
         content="portfolio, Aditya Vaishnav"
       />
-      <link rel="canonical" href="https://salonikabra.netlify.app" />
+      <link rel="canonical" href="https://aditya-vaishnav.netlify.app" />
 
       <meta property="og:image" content={ogImage} />
       <meta property="og:image:alt" content="Banner for the site" />
