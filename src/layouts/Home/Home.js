@@ -163,7 +163,7 @@ export const Home = () => {
         visible={visibleSections.includes(projectFour.current)}
         index={4}
         title="PWA Development"
-        description="As a developer with experience in PWA development and design, I believe that Progressive Web Apps (PWAs) offer a unique opportunity to deliver a high-quality user experience across different platforms and devices. PWA development involves creating web applications that can be accessed through a web browser or installed on a user's device like a native app. "
+        description="As a developer with experience in Progressive Web Apps (PWAs) development and design, I believe that PWAs offer a unique opportunity to deliver a high-quality user experience across different platforms and devices. PWA development involves creating web applications that can be accessed through a web browser or installed on a user's device like a native app. "
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',
@@ -206,7 +206,7 @@ export const Home = () => {
           alt: 'Smart Sparrow lesson builder',
           textures: [
             {
-              srcSet:  [debug, debugLarge],
+              srcSet: [debug, debugLarge],
               placeholder: sliceTexturePlaceholder,
             },
           ],

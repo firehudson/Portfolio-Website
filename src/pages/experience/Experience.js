@@ -89,11 +89,6 @@ const ExperiencePost = ({
           </Text>
         </div>
       </a>
-      {featured && (
-        <Text aria-hidden className={styles.postTag} size="s">
-          477
-        </Text>
-      )}
     </article>
   );
 };

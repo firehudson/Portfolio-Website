@@ -65,6 +65,7 @@
 .details {
   z-index: var(--zIndex1);
   position: relative;
+  padding-bottom: 50px;
 
   @media (--mediaTablet) {
     flex: 0 0 auto;
@@ -72,6 +73,7 @@
     grid-row: 2;
     grid-column: 1;
     justify-self: center;
+    padding-bottom: 0px;
   }
 }
 
