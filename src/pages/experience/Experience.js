@@ -24,6 +24,7 @@ const ExperiencePost = ({
   featured,
   banner,
   categories,
+  link,
   index,
 }) => {
   const [hovered, setHovered] = useState(false);
@@ -66,6 +67,9 @@ const ExperiencePost = ({
         </div>
       )}
       <a
+       href={`${link}`}
+       target="_blank"
+       rel="noopener noreferrer"
         className={styles.postLink}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
@@ -87,6 +91,11 @@ const ExperiencePost = ({
           <Text size={featured ? 'l' : 's'} as="p">
             {abstract}
           </Text>
+          <div className={styles.postFooter}>
+            <Button secondary iconHoverShift icon="chevronRight" as="div">
+              Visit
+            </Button>
+          </div>
         </div>
       </a>
     </article>
