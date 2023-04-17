@@ -67,9 +67,9 @@ const ExperiencePost = ({
         </div>
       )}
       <a
-       href={`${link}`}
-       target="_blank"
-       rel="noopener noreferrer"
+        href={`${link}`}
+        target="_blank"
+        rel="noopener noreferrer"
         className={styles.postLink}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
@@ -89,7 +89,11 @@ const ExperiencePost = ({
           </Heading>
 
           <Text size={featured ? 'l' : 's'} as="p">
-            {abstract}
+            {abstract.split("-").map((data, index) => (
+              <div key={index}>
+                -{data}
+              </div>
+            ))}
           </Text>
           <div className={styles.postFooter}>
             <Button secondary iconHoverShift icon="chevronRight" as="div">
