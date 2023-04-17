@@ -2,13 +2,14 @@ button.toggle {
   --offset: var(--spaceXS);
   --inset: calc(var(--spaceOuter) - var(--offset));
 
+  background-color: rgb(var(--rgbBackground));
   position: fixed;
   top: var(--inset);
   right: var(--inset);
   z-index: var(--zIndex4);
   display: none;
 
-  @media (--mediaMobile), (--mediaMobileLS),(max-height:796px) {
+  @media (--mediaMobile), (--mediaMobileLS), (max-height: 796px) {
     display: flex;
   }
 }
