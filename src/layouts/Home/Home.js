@@ -107,7 +107,7 @@ export const Home = () => {
         visible={visibleSections.includes(projectOne.current)}
         index={1}
         title="Front-end Architecture & Design"
-        description="As a developer, I consider front-end architecture and design to be an essential aspect of web development. It involves creating a solid foundation for the client-side of a web application or website. I prioritize designing user-friendly interfaces, implementing efficient functionality, and ensuring seamless communication with the back-end."
+        description="As a developer, I focus on designing robust and scalable front-end architecture for clients. My approach involves creating a strong foundation for the client-side of web applications and websites, with an emphasis on optimizing speed and performance. I prioritize designing user-friendly interfaces that deliver exceptional user experiences, implementing efficient functionality, and ensuring seamless communication with the back-end."
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',
@@ -144,7 +144,7 @@ export const Home = () => {
         visible={visibleSections.includes(projectThree.current)}
         index={3}
         title="User Interface Development"
-        description="I believe that UI development and design is an essential part of any successful software application. It involves creating intuitive, easy-to-use, and aesthetically pleasing user interfaces (UI) that users interact with. Throughout the development process, I continuously test and refine the UI to ensure that it meets the highest quality standards and delivers an exceptional user experience. "
+        description="I specialize in providing and developing UI interfaces for clients that are intuitive, easy-to-use, and aesthetically pleasing. I work closely with clients to understand their specific needs and requirements, and I strive to deliver a UI that not only meets those needs but also exceeds their expectations. I take a user-centric approach to UI development, creating designs that are easy to use and navigate. Throughout the development process, I continuously test and refine the UI to ensure that it is optimized for performance and usability."
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',
@@ -163,7 +163,7 @@ export const Home = () => {
         visible={visibleSections.includes(projectFour.current)}
         index={4}
         title="PWA Development"
-        description="As a developer with experience in Progressive Web Apps (PWAs) development and design, I believe that PWAs offer a unique opportunity to deliver a high-quality user experience across different platforms and devices. PWA development involves creating web applications that can be accessed through a web browser or installed on a user's device like a native app. "
+        description="As a developer I create Progressive Web Apps (PWAs) for clients by utilizing latest technologies and implementing features like offline caching, push notifications and home screen installation, ensuring a seamless user experience across all devices and platforms. I prioritize creating PWAs that are fast, reliable, engaging, and continuously test and refine the application throughout the development process to ensure that it meets the highest quality standards."
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',
@@ -181,7 +181,7 @@ export const Home = () => {
         visible={visibleSections.includes(projectFive.current)}
         index={5}
         title="Mobile Responsiveness"
-        description="Optimize web pages for mobile devices to ensure they are easy to use and navigate on smaller screens. I use various techniques and tools to ensure that my websites are mobile-responsive, including responsive design, flexible grid systems, and media queries. I also test my websites on different devices and browsers to ensure that they are optimized for a wide range of user scenarios."
+        description="I create mobile-optimized web pages to ensure easy navigation and usability on smaller screens for clients. I use various techniques and tools to ensure that my websites are mobile-responsive, including responsive design, flexible grid systems, and media queries. I also test my websites on different devices and browsers to ensure that they are optimized for a wide range of user scenarios."
         model={{
           type: 'laptop',
           alt: 'Smart Sparrow lesson builder',

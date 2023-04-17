@@ -34,7 +34,7 @@ export function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...r
       const index = (disciplineIndex + 1) % disciplines.length;
       setDisciplineIndex(index);
     },
-    5000,
+    3500,
     theme.themeId
   );
 
@@ -59,7 +59,7 @@ export function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...r
       tabIndex={-1}
       {...rest}
     >
-      <Transition in key={theme.themeId} timeout={3000}>
+      <Transition in key={theme.themeId} timeout={2000}>
         {(visible, status) => (
           <Fragment>
             <DisplacementSphere />
