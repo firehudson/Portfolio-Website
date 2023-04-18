@@ -89,7 +89,7 @@
 
 .modelLeft {
   margin-right: 350px;
-  
+
   @media (--mediaTablet) {
     margin-right: 0px;
   }
@@ -250,6 +250,7 @@
   transition-duration: var(--durationXL);
   transition-delay: var(--durationL);
   opacity: 0;
+  text-align: justify !important;
 
   @media (--mediaUseMotion) {
     transition-property: transform, opacity;

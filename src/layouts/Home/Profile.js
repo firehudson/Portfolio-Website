@@ -27,21 +27,23 @@ const ProfileText = ({ visible, titleId }) => (
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       I own an experienced technologist proficient in the following technologies:
-      <Text data-visible={visible} size="l" as="p">
-        • Node.js
-      </Text>
-      <Text data-visible={visible} size="l" as="p">
-        • Docker
-      </Text>
-      <Text data-visible={visible} size="l" as="p">
-        • React
-      </Text>
-      <Text data-visible={visible} size="l" as="p">
-        • Redux
-      </Text>
-      <Text data-visible={visible} size="l" as="p">
-        • SQL and NoSQL databases
-      </Text>
+      <div className={styles.listContainer}>
+        <Text data-visible={visible} size="l" as="p">
+          • Node.js
+        </Text>
+        <Text data-visible={visible} size="l" as="p">
+          • Docker
+        </Text>
+        <Text data-visible={visible} size="l" as="p">
+          • React
+        </Text>
+        <Text data-visible={visible} size="l" as="p">
+          • Redux
+        </Text>
+        <Text data-visible={visible} size="l" as="p">
+          • SQL and NoSQL databases
+        </Text>
+      </div>
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       I have also gained extensive experience in developing customized, location-based
@@ -52,10 +54,10 @@ const ProfileText = ({ visible, titleId }) => (
       experience.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      In summary, with over seven years of experience, I possess a wide range of
-      technical skills and expertise in developing and delivering modern-day apps for both
-      web and mobile platforms. I am passionate about technology and design, and I am
-      always eager to learn and explore new areas to enhance my skills and knowledge.
+      In summary, with over seven years of experience, I possess a wide range of technical
+      skills and expertise in developing and delivering modern-day apps for both web and
+      mobile platforms. I am passionate about technology and design, and I am always eager
+      to learn and explore new areas to enhance my skills and knowledge.
     </Text>
   </Fragment>
 );

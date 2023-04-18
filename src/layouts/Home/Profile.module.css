@@ -78,6 +78,11 @@
   }
 }
 
+.listContainer {
+  margin-top: var(--spaceM);
+  padding-left: 10px;
+}
+
 .tag {
   margin-top: 220px;
   margin-bottom: 40px;

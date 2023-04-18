@@ -12,6 +12,10 @@
   }
 }
 
+.techStackContainer {
+  padding-top: 10px;
+}
+
 .categoriesContainer {
   margin-bottom: 20px;
   display: flex;
@@ -282,7 +286,7 @@
 
     @media (--singleColumnWidth) {
       padding-top: 15%;
-      padding-bottom:10%;
+      padding-bottom: 10%;
     }
 
     &::after {

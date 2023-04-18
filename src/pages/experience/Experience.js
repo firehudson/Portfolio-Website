@@ -91,7 +91,8 @@ const ExperiencePost = ({
           <Text size={featured ? 'l' : 's'} as="p">
             {abstract.split("-").map((data, index) => (
               <div key={index}>
-                -{data}
+                {index < abstract.split("-").length - 1 ?
+                  <>-{data}</> : <div className={styles.techStackContainer}>-{data}</div>}
               </div>
             ))}
           </Text>

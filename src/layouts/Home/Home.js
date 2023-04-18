@@ -181,7 +181,7 @@ export const Home = () => {
         visible={visibleSections.includes(projectFive.current)}
         index={5}
         title="Mobile Responsiveness"
-        description="I create mobile-optimized web pages to ensure easy navigation and usability on smaller screens for clients. I use various techniques and tools to ensure that my websites are mobile-responsive, including responsive design, flexible grid systems, and media queries. I also test my websites on different devices and browsers to ensure that they are optimized for a wide range of user scenarios."
+        description="As a web designer, my focus is on creating mobile-friendly web pages that are easy to navigate and use on smaller screens. To achieve this, I employ a range of techniques and tools, such as responsive design, flexible grid systems, and media queries. My goal is to ensure that every website I design is optimized for a seamless experience, regardless of the user's device or browser. I also perform extensive testing on various devices and browsers, ensuring that each website is responsive and user-friendly in all scenarios."
         model={{
           type: 'laptop',
           alt: 'Smart Sparrow lesson builder',
@@ -200,7 +200,7 @@ export const Home = () => {
         visible={visibleSections.includes(projectSix.current)}
         index={6}
         title="Debugging and Testing"
-        description="I believe that testing and debugging are critical to ensuring the quality and reliability of software applications. I perform extensive testing and debugging to identify and fix any errors or issues with the web pages or application. I use various tools and techniques to debug and test my code, including unit testing, integration testing, and acceptance testing."
+        description="As a software developer, I prioritize extensive testing and debugging to ensure the quality and reliability of software applications. I use various tools and techniques, such as unit testing, integration testing, and acceptance testing, to identify and fix errors and issues with web pages and applications."
         model={{
           type: 'laptop',
           alt: 'Smart Sparrow lesson builder',
