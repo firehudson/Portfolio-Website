@@ -20,31 +20,31 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      ⭐I am a highly skilled technologist with over 7+ years of experience in developing
+      I am a highly skilled technologist with over 7+ years of experience in developing
       and delivering modern-day applications for web and mobile platforms. My passion for
       technology and design has led me to explore various areas, including console games,
       gadgets, and computers.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      ⭐I own an experienced technologist proficient in the following technologies:
+      I own an experienced technologist proficient in the following technologies:
       <Text data-visible={visible} size="l" as="p">
-        ✔️ Node.js
+        • Node.js
       </Text>
       <Text data-visible={visible} size="l" as="p">
-        ✔️ Docker
+        • Docker
       </Text>
       <Text data-visible={visible} size="l" as="p">
-        ✔️ React
+        • React
       </Text>
       <Text data-visible={visible} size="l" as="p">
-        ✔️ Redux
+        • Redux
       </Text>
       <Text data-visible={visible} size="l" as="p">
-        ✔️ SQL and NoSQL databases
+        • SQL and NoSQL databases
       </Text>
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      ⭐I have also gained extensive experience in developing customized, location-based
+      I have also gained extensive experience in developing customized, location-based
       applications. Over the past seven years, I have successfully designed and delivered
       several location-based apps, each with unique features and functionalities. My
       experience in this area has equipped me with the ability to understand complex data
@@ -52,7 +52,7 @@ const ProfileText = ({ visible, titleId }) => (
       experience.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      ⭐In summary, with over seven years of experience, I possess a wide range of
+      In summary, with over seven years of experience, I possess a wide range of
       technical skills and expertise in developing and delivering modern-day apps for both
       web and mobile platforms. I am passionate about technology and design, and I am
       always eager to learn and explore new areas to enhance my skills and knowledge.
@@ -109,18 +109,6 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   placeholder={profileImgPlaceholder}
                   srcSet={[profileImg, profileImgLarge]}
                   sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                  alt="Me standing in front of the Torii on Miyajima, an island off the coast of Hiroshima in Japan"
-                />
-                <Image
-                  placeholder={profileImgPlaceholder}
-                  srcSet={profileKatakana}
-                  className={styles.profileText}
-                  style={{
-                    top: '-110px',
-                    left: '91px',
-                    scale: '0.85',
-                    transform: 'rotate(90deg)',
-                  }}
                   alt="Me standing in front of the Torii on Miyajima, an island off the coast of Hiroshima in Japan"
                 />
               </div>

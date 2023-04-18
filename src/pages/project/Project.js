@@ -89,7 +89,11 @@ const ProjectPost = ({
           </Heading>
 
           <Text size={featured ? 'l' : 's'} as="p">
-            {abstract}
+            {abstract.split("-").map((data, index) => (
+              <div key={index}>
+                -{data}
+              </div>
+            ))}
           </Text>
           <div className={styles.postFooter}>
             <Button secondary iconHoverShift icon="chevronRight" as="div">
