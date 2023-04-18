@@ -89,10 +89,21 @@ const ExperiencePost = ({
           </Heading>
 
           <Text size={featured ? 'l' : 's'} as="p">
-            {abstract.split("-").map((data, index) => (
+            {abstract.split('-').map((data, index) => (
               <div key={index}>
-                {index < abstract.split("-").length - 1 ?
-                  <>-{data}</> : <div className={styles.techStackContainer}>-{data}</div>}
+                {index < abstract.split('-').length - 1 ? (
+                  <div className={styles.dataContainer}>
+                    -
+                    <div>{data}</div>
+                  </div>
+                ) : (
+                  <div className={classes(styles.techStackContainer, styles.dataContainer)}>
+                    -
+                    <div>
+                      {data}
+                    </div>
+                  </div>
+                )}
               </div>
             ))}
           </Text>
