@@ -126,7 +126,7 @@ export const Home = () => {
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
         title="Custom App Development"
-        description="As a developer, I work closely with clients to identify their needs and goals, and then design and develop a solution that meets those needs. This involves creating wireframes, prototypes, using bootstrap, material UI , integrating third party apps, and user interface (UI) designs that are visually appealing, intuitive, and user-friendly."
+        description="As a developer, I work closely with clients to identify their needs and goals, and then design and develop a solution that meets those needs. This involves creating wireframes, prototypes, using bootstrap, material UI , integrating third party apps like maps, chats, etc., and user interface (UI) designs that are visually appealing, intuitive, and user-friendly."
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',
