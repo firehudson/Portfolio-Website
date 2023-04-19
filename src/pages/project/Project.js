@@ -67,7 +67,7 @@ const ProjectPost = ({
         </div>
       )}
       <a
-        href={`${link}`}
+        href={link && `${link}`}
         target="_blank"
         rel="noopener noreferrer"
         className={styles.postLink}
@@ -95,11 +95,11 @@ const ProjectPost = ({
               </div>
             ))}
           </Text>
-          <div className={styles.postFooter}>
+          {link && <div className={styles.postFooter}>
             <Button secondary iconHoverShift icon="chevronRight" as="div">
               Visit
             </Button>
-          </div>
+          </div>}
         </div>
       </a>
     </article>
