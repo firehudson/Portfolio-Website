@@ -1,4 +1,3 @@
-import { Link } from 'components/Link';
 import { Text } from 'components/Text';
 import { classes } from 'utils/style';
 import styles from './Footer.module.css';
@@ -9,7 +8,6 @@ export const Footer = ({ className }) => (
       <span className={styles.date}>
         {`© ${new Date().getFullYear()} Aditya Vaishnav.`}
       </span>
-
     </Text>
   </footer>
 );

@@ -31,5 +31,4 @@ export const navLinks = [
     label: 'Resume',
     pathname: '/resume',
   },
-
 ];

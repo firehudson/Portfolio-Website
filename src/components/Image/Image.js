@@ -146,7 +146,6 @@ const ImageElements = ({
       data-visible={inViewport || loaded}
       style={cssProps({ delay: numToMs(delay + 1000) })}
     >
-
       {isVideo && hasMounted && (
         <Fragment>
           <video

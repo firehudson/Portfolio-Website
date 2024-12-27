@@ -68,7 +68,6 @@ export function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...r
               <h1 className={styles.name} data-visible={visible} id={titleId}>
                 <DecoderText text="Aditya Vaishnav" delay={300} />
               </h1>
-
               <Heading level={0} as="h2" className={styles.title}>
                 <VisuallyHidden className={styles.label}>
                   {`Developer + ${introLabel}`}
