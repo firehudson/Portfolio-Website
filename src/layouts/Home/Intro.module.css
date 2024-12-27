@@ -142,7 +142,7 @@
   font-size: 70px;
 
   @media (--mediaTablet) {
-   font-size: 65px;
+    font-size: 65px;
   }
 
   &::after {
@@ -360,4 +360,8 @@
   &:focus-visible {
     opacity: 1;
   }
+}
+
+.about {
+  padding-top: 50px;
 }

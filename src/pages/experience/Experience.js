@@ -21,6 +21,7 @@ const ExperiencePost = ({
   title,
   abstract,
   date,
+  duration,
   featured,
   banner,
   categories,
@@ -88,6 +89,9 @@ const ExperiencePost = ({
             {title}
           </Heading>
 
+          <Text as="p">
+            {duration}
+          </Text>
           <Text size={featured ? 'l' : 's'} as="p">
             {abstract.split('-').map((data, index) => (
               <div key={index}>
@@ -175,11 +179,10 @@ export const Experience = ({ posts, featured }) => {
 
   const categories = [
     'Full-Stack Developer',
+    'Frontend Architect',
     'Senior Frontend Developer',
     'Frontend Developer',
     'Solution Engineer',
-    'Frontend Architect',
-    'Reset All',
   ];
 
   const { width } = useWindowSize();

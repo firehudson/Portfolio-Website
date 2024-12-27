@@ -41,7 +41,7 @@ export const Home = () => {
   const projectFour = useRef();
   const projectFive = useRef();
   const projectSix = useRef();
-  const about = useRef();
+  // const about = useRef();
 
   useEffect(() => {
     const sections = [
@@ -52,7 +52,7 @@ export const Home = () => {
       projectFour,
       projectFive,
       projectSix,
-      about,
+      // about,
     ];
 
     const sectionObserver = new IntersectionObserver(
@@ -220,11 +220,11 @@ export const Home = () => {
         <Text className={styles.anchorTag}>Cross-Browser Compatibility</Text>
       </div>
 
-      <Profile
+      {/* <Profile
         sectionRef={about}
         visible={visibleSections.includes(about.current)}
         id="about"
-      />
+      /> */}
       <Footer />
     </div>
   );

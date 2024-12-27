@@ -1,4 +1,5 @@
 import ArrowDown from 'assets/arrow-down.svg';
+import { Text } from "components/Text";
 import { DecoderText } from 'components/DecoderText';
 import { Heading } from 'components/Heading';
 import { Section } from 'components/Section';
@@ -106,6 +107,12 @@ export function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...r
                   </AnimatePresence>
                 </div>
               </Heading>
+              <div className={styles.about}>
+                <Text as="h4" weight="regular">
+                  With over 7 years of experience, I specialize in crafting cutting-edge web and mobile applications. Proficient in modern frameworks like React, Node.js, and Docker, I excel at creating intuitive, user-focused solutions. Passionate about innovation, I blend technical expertise with design sensibility to deliver impactful, future-ready applications.
+                </Text>
+              </div>
+
             </header>
             <RouterLink href="/#project-1">
               <a

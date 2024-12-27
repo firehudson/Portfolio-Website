@@ -35,11 +35,11 @@
 }
 
 .content {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 50%;
   grid-column-gap: var(--space2XL);
   max-width: var(--maxWidthL);
-  width: 100%;
+  width: 100%; */
 
   @media (--mediaTablet) {
     max-width: 600px;

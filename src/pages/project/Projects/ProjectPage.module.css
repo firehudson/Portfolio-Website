@@ -1,0 +1,94 @@
+.box {
+  display: flex;
+  gap: 5vw;
+  margin: 6vw 4vw 6vw 4vw;
+  padding: 2%;
+  background-color: black;
+}
+.Left {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  max-width: 50%;
+}
+.Left a {
+  text-decoration: none;
+  padding: 20px 70px;
+  border: 2px solid rgb(13, 96, 135);
+  background-color: rgb(13, 96, 135);
+  align-self: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.Left a:hover {
+  color: azure;
+  background-color: rgb(16, 128, 181);
+  transform: scale(1.2);
+  box-shadow: 0 0 20px rgba(13, 96, 135, 0.8), 0 0 30px rgba(13, 96, 135, 0.5);
+}
+.right {
+  padding: 1vw;
+  object-fit: contain;
+  height: auto;
+  width: min-content;
+  max-width: 50vw;
+}
+@media (max-width: 1024px) {
+  .box {
+    padding: auto;
+    flex-direction: column-reverse;
+    gap: 2vw;
+  }
+
+  .Left,
+  .right {
+    max-width: 100%;
+  }
+
+  .Left a {
+    padding: 15px 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .box {
+    padding: auto;
+    margin: 5vw 2vw;
+  }
+
+  .Left a {
+    padding: 12px 40px;
+  }
+
+  .right {
+    order: -1;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .box {
+    padding: auto;
+    margin: 5vw 2vw;
+  }
+
+  .Left h3 {
+    font-size: 1.2rem;
+  }
+
+  .Left h4 {
+    font-size: 1rem;
+  }
+
+  .Left span {
+    font-size: 0.9rem;
+  }
+
+  .Left a {
+    padding: 10px 30px;
+  }
+
+  .right {
+    max-width: 100%;
+    padding: 0;
+  }
+}
