@@ -1,0 +1,35 @@
+.Project {
+  margin-top: 5%;
+  margin-left: 10%;
+  margin: 5% 8% 0% 10%;
+}
+
+.cardContent {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2vw;
+}
+
+@media (max-width: 1024px) {
+  .cardContent {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .Project {
+    margin: 5% 5% 0% 5%;
+  }
+  .cardContent {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .Project {
+    margin: 5% 2% 0% 2%;
+  }
+  .cardContent {
+    grid-template-columns: 1fr;
+  }
+}
