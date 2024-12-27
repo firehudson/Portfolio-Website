@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './card.module.css';
+import styles from './Card.module.css';
 import { Image } from 'components/Image';
 import { media } from 'utils/style';
 export default function Card({ title, role, brief, justify, imageUrl }) {

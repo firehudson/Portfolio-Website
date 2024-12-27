@@ -21,9 +21,8 @@ export const PDFViewer = ({ resume, pdfLink }) => {
     <>
       <Document file={pdfLink} onLoadSuccess={onDocumentLoadSuccess}>
         {Array.from({ length: numPages }, (_, index) => (
-          <div className={styles.pageContainer}>
+          <div key={`page_${index + 1}`} className={styles.pageContainer}>
             <Page
-              key={`page_${index + 1}`}
               pageNumber={index + 1}
               renderAnnotationLayer={false}
               renderTextLayer={false}

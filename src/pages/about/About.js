@@ -45,7 +45,7 @@ const ProfileText = ({ visible, titleId }) => (
       </div>
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      My extensive experience includes crafting customized, location-based applications, where I've
+      My extensive experience includes crafting customized, location-based applications, where I&apos;ve
       successfully designed and delivered innovative solutions with unique features. This journey has
       honed my ability to distill complex data into intuitive, user-friendly interfaces that elevate the
       overall user experience.
