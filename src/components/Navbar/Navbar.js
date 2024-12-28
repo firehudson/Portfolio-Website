@@ -116,7 +116,7 @@ export const Navbar = () => {
   const getCurrent = (url = '') => {
     const nonTrailing = current?.endsWith('/') ? current?.slice(0, -1) : current;
 
-    if (url === nonTrailing) {
+    if (url === nonTrailing || current?.startsWith?.(url)) {
       return 'page';
     }
 
