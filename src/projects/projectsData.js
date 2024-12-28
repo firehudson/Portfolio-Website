@@ -1,8 +1,9 @@
 import dechea from 'assets/10-Dechea.jpg';
 import santiment from 'assets/9-Santiment.jpg';
 import GQTY from 'assets/11-GQTYdev.jpg';
-import AuthBuddyVideo from 'assets/AuthBuddy.mp4';
+import AuthBuddyVideo from 'assets/project-demo/auth-buddy-demo.mp4';
 import AuthBuddy from 'assets/AuthBuddy.jpg';
+import AlphaVantageChartVideo from 'assets/project-demo/alpha-vantage-chart-demo.mp4';
 import AlphaVantageChart from 'assets/AlphaVantageChart.jpg';
 export const projectData = [
     {
@@ -78,8 +79,8 @@ export const projectData = [
             'Optimized data fetching, implemented through server-side rendering (SSR) with Next.js.'
         ],
         justify: 'Developed this application with a focus on efficient data fetching, smooth visualizations, and user-friendly interactions. By leveraging Next.js 14 features, TypeScript for type safety, and ApexCharts for advanced data visualization, I ensured a robust and maintainable solution.',
-        link: 'Live Demo',
+        link: 'https://alpha-vantage-chart.vercel.app/',
         imageUrl: AlphaVantageChart,
-        videoUrl: AuthBuddyVideo,
+        videoUrl: AlphaVantageChartVideo,
     }
 ];

@@ -1,35 +1,72 @@
-.Project {
-  margin-top: 5%;
-  margin-left: 10%;
-  margin: 5% 8% 0% 10%;
+@custom-media --singleColumnWidth (max-width: 1190px);
+
+.projects {
+  display: grid;
+  align-items: start;
+  justify-items: center;
+  grid-template-rows: 1fr auto;
+  min-height: 100%;
+
+  @media (--singleColumnWidth), (--mediaMobileLS) {
+    overflow-x: hidden;
+  }
+}
+
+.grid {
+  --verticalPadding: var(--space4XL);
+
+  max-width: 1800px;
+  padding-top: var(--verticalPadding);
+  padding-bottom: var(--space4XL);
+  padding-left: var(--space3XL);
+  padding-right: var(--spaceL);
+  height: 100%;
+
+  @media (--mediaDesktop) {
+    --verticalPadding: var(--spaceOuter);
+
+    padding-left: 0;
+  }
+
+  @media (--mediaLaptop) {
+    padding-bottom: var(--space3XL);
+  }
+
+  @media (--singleColumnWidth), (--mediaMobileLS) {
+    padding-right: 0;
+    grid-template-columns: 100%;
+  }
+
+  @media (--mediaMobile), (--mediaMobileLS) {
+    padding-bottom: var(--spaceXL);
+    padding-top: var(--mobileNavOffset);
+  }
 }
 
 .cardContent {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 2vw;
+  margin-top: 40px;
 }
 
 @media (max-width: 1024px) {
   .cardContent {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 40px;
   }
 }
 
 @media (max-width: 768px) {
-  .Project {
-    margin: 5% 5% 0% 5%;
-  }
   .cardContent {
     grid-template-columns: 1fr;
+    margin-top: 30px;
   }
 }
 
 @media (max-width: 480px) {
-  .Project {
-    margin: 5% 2% 0% 2%;
-  }
   .cardContent {
     grid-template-columns: 1fr;
+    margin-top: 20px;
   }
 }

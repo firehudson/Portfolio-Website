@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Card.module.css';
 import { Image } from 'components/Image';
 import { media } from 'utils/style';
+import { Button } from 'components/Button';
 export default function Card({ title, role, brief, justify, imageUrl }) {
 
     return (
@@ -23,7 +24,9 @@ export default function Card({ title, role, brief, justify, imageUrl }) {
                 </p>
                 <p>{justify}</p>
 
-                <a href={`/project/Projects/${title}`}>Know more</a>
+                <Button secondary iconHoverShift icon="chevronRight" href={`/project/Projects/${title}`} style={{ marginLeft: '16px', border: 'none', width: 'fit-content', alignSelf: 'flex-start' }}>
+                    Know more
+                </Button>
             </div>
         </div>
     );

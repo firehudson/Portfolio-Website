@@ -3,9 +3,9 @@ import styles from './skills.module.css';
 import { DecoderText } from 'components/DecoderText';
 import { Heading } from "components/Heading";
 import { Footer } from "components/Footer";
-import { Divider } from "components/Divider";
-import { useState, useEffect } from 'react';
-import { useRouter } from 'next/router';
+import { Meta } from "components/Meta";
+import { Section } from "components/Section";
+import { Text } from "components/Text";
 
 // Categorized skills
 const skillCategories = {
@@ -20,69 +20,48 @@ const skillCategories = {
 };
 
 const SkillsPage = () => {
-    const [selectedSkills, setSelectedSkills] = useState([]);
-    const router = useRouter();
-
-    // Sync selectedSkills with URL query parameters on load and update
-    useEffect(() => {
-        if (router.query.filter) {
-            setSelectedSkills(router.query.filter.split(','));
-        }
-    }, [router.query.filter]);
-
-    // Update the URL query parameter when selectedSkills changes
-    useEffect(() => {
-        if (selectedSkills.length > 0) {
-            router.push({
-                pathname: router.pathname,
-                query: { filter: selectedSkills.join(',') }
-            });
-        } else {
-            router.push(router.pathname); // Reset URL when no filters are selected
-        }
-    }, [selectedSkills]);
 
     return (
         <div className={styles.SkillsPage}>
             {Object.entries(skillCategories).map(([category, skills]) => (
                 <div key={category} className={styles.ChipsBox}>
-                    <h4>{category}</h4>
+                    <Text as="h1" size="xl" weight="medium">{category}</Text>
                     <div className={styles.skills}>
                         {skills.map((skill) => (
                             <Chips
                                 key={skill}
                                 title={skill}
                                 className={styles.Chips}
-                                selected={selectedSkills.includes(skill)}
-                                selectedCategories={selectedSkills}
-                                setSelectedCategories={setSelectedSkills}
                             />
                         ))}
                     </div>
                 </div>
             ))}
-            {selectedSkills.length > 0 && (
-                <div style={{ marginTop: '20px' }}>
-                    <h2>Selected Skills:</h2>
-                    <ul>
-                        {selectedSkills.map((skill) => (
-                            <li key={skill}>{skill}</li>
-                        ))}
-                    </ul>
-                </div>
-            )}
+
         </div>
     );
 };
 
 export default function Skills() {
-    return (<div className={styles.mainContainer}>
-        <Heading className={styles.heading} level={3} as="h1">
-            <DecoderText text="Skillsets" />
-        </Heading>
-        <div className={styles.box}>
-            <SkillsPage />
-        </div>
-        <Footer />
-    </div>);
+    return (
+        <article className={styles.skills}>
+            <Meta
+                title="Skills"
+                description="Experienced in crafting seamless and interactive web experiences using modern front-end and back-end technologies. From building dynamic user interfaces with React and JavaScript to developing efficient server-side solutions with Node.js, I focus on creating robust and scalable web applications. My skillset includes a strong foundation in CSS for responsive design and a commitment to continuous learning through certifications and real-world projects"
+            />
+            <Section className={styles.content}>
+                <div className={styles.grid}>
+                    <Heading level={3} as="h1">
+                        <DecoderText text="Skills" />
+                    </Heading>
+
+                    <div className={styles.box}>
+                        <SkillsPage />
+                    </div>
+                </div>
+            </Section>
+            <Footer />
+        </article>
+
+    );
 }
