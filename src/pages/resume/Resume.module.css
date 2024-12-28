@@ -1,4 +1,47 @@
+@custom-media --singleColumnWidth (max-width: 1190px);
+
 .resume {
+  display: grid;
+  align-items: start;
+  justify-items: center;
+  grid-template-rows: 1fr auto;
+  min-height: 100%;
+
+  @media (--singleColumnWidth), (--mediaMobileLS) {
+    overflow-x: hidden;
+  }
+}
+
+.grid {
+  --verticalPadding: var(--space4XL);
+
   display: flex;
-  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  max-width: 1800px;
+  padding-top: var(--verticalPadding);
+  padding-bottom: var(--space4XL);
+  padding-left: var(--space3XL);
+  padding-right: var(--spaceL);
+  height: 100%;
+
+  @media (--mediaDesktop) {
+    --verticalPadding: var(--spaceOuter);
+
+    padding-left: 0;
+  }
+
+  @media (--mediaLaptop) {
+    padding-bottom: var(--space3XL);
+  }
+
+  @media (--singleColumnWidth), (--mediaMobileLS) {
+    padding-right: 0;
+    grid-template-columns: 100%;
+  }
+
+  @media (--mediaMobile), (--mediaMobileLS) {
+    padding-bottom: var(--spaceXL);
+    padding-top: var(--mobileNavOffset);
+  }
 }
