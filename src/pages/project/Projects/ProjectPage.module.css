@@ -51,20 +51,7 @@
   gap: 1vw;
   max-width: 50%;
 }
-.Left a {
-  text-decoration: none;
-  padding: 20px 70px;
-  border: 2px solid rgb(13, 96, 135);
-  background-color: rgb(13, 96, 135);
-  align-self: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-.Left a:hover {
-  color: azure;
-  background-color: rgb(16, 128, 181);
-  transform: scale(1.2);
-  box-shadow: 0 0 20px rgba(13, 96, 135, 0.8), 0 0 30px rgba(13, 96, 135, 0.5);
-}
+
 .right {
   padding: 1vw;
   object-fit: contain;
