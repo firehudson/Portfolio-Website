@@ -17,9 +17,9 @@ export const Chips = ({ title, selected, selectedCategories, setSelectedCategori
     } else if (selectedCategories?.includes(title)) {
       const categories = [...selectedCategories];
       categories.splice(categories.indexOf(title), 1);
-      setSelectedCategories(categories);
+      setSelectedCategories?.(categories);
     } else {
-      setSelectedCategories([...selectedCategories, title]);
+      setSelectedCategories?.([...selectedCategories, title]);
     }
   };
   return (
