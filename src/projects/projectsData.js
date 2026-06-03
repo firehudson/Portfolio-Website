@@ -1,4 +1,5 @@
 import dechea from 'assets/10-Dechea.jpg';
+import mercanis from 'assets/20-mercanis.png';
 import santiment from 'assets/9-Santiment.jpg';
 import GQTY from 'assets/11-GQTYdev.jpg';
 import AuthBuddyVideo from 'assets/project-demo/auth-buddy-demo.mp4';
@@ -20,7 +21,7 @@ export const projectData = [
         ],
         justify: 'As Sr. Frontend Engineer, I architect and develop scalable frontend features, conduct thorough PR reviews, and collaborate with cross-functional teams to translate complex AI-driven procurement workflows into intuitive user-facing interfaces.',
         link: 'https://www.mercanis.com/',
-        imageUrl: dechea
+        imageUrl: mercanis
     },
     {
         id: 'Dechea',
