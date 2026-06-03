@@ -1,12 +1,12 @@
 export const socialLinks = [
   {
     label: 'Linkedin',
-    url: 'https://in.linkedin.com/in/ady-vaishnav',
+    url: 'https://www.linkedin.com/in/aditya-vaishnav-99513427b/',
     icon: 'linkedin',
   },
   {
-    label: 'Medium',
-    url: 'https://medium.com/@aditya.vaishanv2022',
-    icon: 'medium',
+    label: 'GitHub',
+    url: 'https://www.github.com/firehudson',
+    icon: 'github',
   },
 ];

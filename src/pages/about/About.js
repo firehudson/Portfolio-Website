@@ -20,56 +20,50 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I am a seasoned technologist with over 7 years of experience in developing and delivering modern web and
-      mobile applications. My passion for technology and design drives me to explore various domains, from
-      console games to cutting-edge gadgets.
+      I&apos;m a Senior Frontend Engineer with 7+ years of experience building scalable, high-performance web
+      applications using React and TypeScript. I thrive in remote, async-first environments and have a proven
+      track record of leading frontend architecture decisions, mentoring engineers, and driving best practices
+      across large, evolving codebases.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I am proficient in a wide range of technologies, including
+      I actively integrate AI-assisted development tools — including Claude Code and Cursor — into my daily
+      workflows to improve throughput and code quality. My core stack includes:
       <div className={styles.listContainer}>
         <Text data-visible={visible} size="l" as="p">
-          • Node.js
+          • React.js, Next.js, Svelte.js
         </Text>
         <Text data-visible={visible} size="l" as="p">
-          • Docker
+          • TypeScript, GraphQL, REST APIs
         </Text>
         <Text data-visible={visible} size="l" as="p">
-          • React
+          • Redux, Zustand, React Query
         </Text>
         <Text data-visible={visible} size="l" as="p">
-          • Redux
+          • Node.js, Firebase, MongoDB
         </Text>
         <Text data-visible={visible} size="l" as="p">
-          • SQL and NoSQL databases
+          • AWS, GCP, Docker, GitHub Actions
         </Text>
       </div>
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      My extensive experience includes crafting customized, location-based applications, where I&apos;ve
-      successfully designed and delivered innovative solutions with unique features. This journey has
-      honed my ability to distill complex data into intuitive, user-friendly interfaces that elevate the
-      overall user experience.
-    </Text>
-    <Text className={styles.description} data-visible={visible} size="l" as="p">
-      As a forward-thinking engineer, I am dedicated to leveraging my technical expertise and design sensibility
-      to create impactful applications. I am always eager to learn and explore new trends, ensuring that I stay
-      at the forefront of the industry while delivering exceptional results.
+      I&apos;ve collaborated with distributed teams across multiple time zones and am flexible with working hours
+      to match global business needs. Whether translating complex business logic into intuitive interfaces or
+      architecting micro-frontends at scale, I focus on delivering clean, maintainable code that stands the test
+      of time.
     </Text>
     <Heading className={styles.title} data-visible={visible} level={3} id={titleId}>
       <DecoderText text="Why choose me?" start={visible} delay={500} />
     </Heading>
     <ul className={styles.features}>
-      <Text className={styles.description} data-visible={visible} size="m" as="li"> 7+ years of professional experience</Text>
-      <Text className={styles.description} data-visible={visible} size="m" as="li"> Proficiency in modern technologies and frameworks including -React.js, Next.js, Svelte, Web3, Typescript, JavaScript, GraphQL, and Node.js</Text>
-      <Text className={styles.description} data-visible={visible} size="m" as="li"> Good conceptual knowledge of Blockchain and Cloud Platforms (AWS, GCP) and practical knowledge of Frontend Architecture </Text>
-      <Text className={styles.description} data-visible={visible} size="m" as="li"> Strong background in code optimization for speed and expertise in translating design mockups into usable frontend solutions</Text>
-      <Text className={styles.description} data-visible={visible} size="m" as="li"> Deep knowledge of application testing (Unit, Integration, Automation, End-to-End), and experience in REST API integration and handling.</Text>
-      <Text className={styles.description} data-visible={visible} size="m" as="li"> Expertise in collaborating with cross-functional teams including designers, backend developers, product managers, and other stakeholders</Text>
-      <Text className={styles.description} data-visible={visible} size="m" as="li"> Prior experience in mentoring other developers and participating in code reviews</Text>
-      <Text className={styles.description} data-visible={visible} size="m" as="li"> Excellent troubleshooting and problem-solving skills </Text>
-      <Text className={styles.description} data-visible={visible} size="m" as="li">
-        Collaboration Hours:Overlapping working hours are needed for effective collaboration in a remote setup. I am flexible and willing to adjust my schedule whenever required to make sure that I am available for key meetings and collaborative sessions, aligning with your working hours.
-      </Text>
+      <Text className={styles.description} data-visible={visible} size="m" as="li">7+ years of professional frontend engineering experience</Text>
+      <Text className={styles.description} data-visible={visible} size="m" as="li">Deep expertise in React, Next.js, TypeScript, Svelte, and modern state management (Redux, Zustand)</Text>
+      <Text className={styles.description} data-visible={visible} size="m" as="li">Strong knowledge of frontend architecture — micro-frontends, SOLID principles, design patterns, and Agile/Scrum</Text>
+      <Text className={styles.description} data-visible={visible} size="m" as="li">Comprehensive testing skills: Jest, React Testing Library, Cypress, Playwright, and cross-browser testing</Text>
+      <Text className={styles.description} data-visible={visible} size="m" as="li">Experience with Blockchain and Web3 (Solidity, Web3.js, Ethers.js) and Cloud Platforms (AWS, GCP)</Text>
+      <Text className={styles.description} data-visible={visible} size="m" as="li">Proven track record of mentoring engineers, conducting PR reviews, and raising engineering standards</Text>
+      <Text className={styles.description} data-visible={visible} size="m" as="li">Experienced in collaborating with cross-functional teams: designers, product managers, backend engineers, and stakeholders</Text>
+      <Text className={styles.description} data-visible={visible} size="m" as="li">Flexible with working hours — available for key meetings and collaborative sessions across time zones</Text>
     </ul>
   </Fragment >
 );

@@ -109,7 +109,7 @@ export function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...r
               </Heading>
               <div className={styles.about}>
                 <Text as="h4" weight="regular">
-                  With over 7 years of experience, I specialize in crafting cutting-edge web and mobile applications. Proficient in modern frameworks like React, Node.js, and Docker, I excel at creating intuitive, user-focused solutions. Passionate about innovation, I blend technical expertise with design sensibility to deliver impactful, future-ready applications.
+                  Senior Frontend Engineer with 7+ years of experience building scalable, high-performance web applications using React and TypeScript. Experienced in remote, async-first environments collaborating with distributed teams. Proven track record of leading frontend architecture decisions, mentoring engineers, and driving best practices across large codebases.
                 </Text>
               </div>
 

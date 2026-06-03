@@ -7,16 +7,17 @@ import { Meta } from "components/Meta";
 import { Section } from "components/Section";
 import { Text } from "components/Text";
 
-// Categorized skills
 const skillCategories = {
-    Frontend: ['React.js', 'JavaScript', 'HTML', 'CSS', 'TypeScript', 'Material UI', 'GraphQL'],
-    Backend: ['Node.js', 'Firebase', 'Redux.js', 'GraphQL', 'IBM Watson', 'MongoDB'],
-    Database: ['MongoDB', 'SQL', 'Firebase'],
-    VersionControl: ['Git', 'GitHub', 'GitLab'],
-    DevOps: ['Google Cloud Platform (GCP)', 'Firebase'],
-    Testing: ['Mocha (JavaScript Framework)', 'Sentry', 'Storybook'],
-    ProjectManagement: ['Jira', 'Agile Methodologies'],
-    Other: ['Nx', 'Lerna', 'BrowserStack'],
+    'Frontend Frameworks & Libraries': ['React.js', 'Next.js', 'Svelte.js', 'Redux', 'Zustand', 'Redux Thunk', 'Redux Saga', 'TypeScript', 'JavaScript', 'HTML', 'CSS'],
+    'AI & Intelligent Tooling': ['Claude Code', 'Cursor', 'Windsurf', 'Lovable', 'GitHub Copilot'],
+    'UI & Design Systems': ['Tailwind CSS', 'Material UI', 'Ant Design', 'Storybook', 'Reactstrap', 'Melt UI', 'Skeleton UI', 'Reshaped'],
+    'Data Fetching & Visualization': ['REST APIs', 'GraphQL', 'React Query', 'Axios', 'Fetch API', 'Recharts', 'React Table'],
+    'Backend & Databases': ['Node.js', 'Firebase', 'Firestore', 'MongoDB', 'FaunaDB', 'MySQL', 'Vercel Blob'],
+    'Cloud, Auth & DevOps': ['AWS', 'GCP', 'Docker', 'GitHub Actions', 'Vercel', 'Netlify', 'Auth0', 'Clerk', 'Okta', 'Sentry', 'Datadog'],
+    'Testing & Code Quality': ['Jest', 'React Testing Library', 'Cypress', 'Playwright', 'Testcafe', 'ESLint', 'Prettier', 'SonarCloud', 'Cross-Browser Testing'],
+    'Architecture & Methodology': ['Micro-frontends', 'SOLID Principles', 'Domain Modelling', 'Design Patterns', 'Monolithic Architecture', 'Agile/Scrum'],
+    'Blockchain & Web3': ['Smart Contract Development', 'Solidity', 'Web3.js', 'Ethers.js'],
+    'Version Control & Collaboration': ['Git', 'GitHub', 'GitLab', 'Jira', 'ClickUp', 'Figma', 'Slack'],
 };
 
 const SkillsPage = () => {

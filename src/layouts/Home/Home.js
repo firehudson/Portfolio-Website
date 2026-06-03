@@ -29,7 +29,7 @@ import { Heading } from 'components/Heading';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
 
-const disciplines = ['Full-stack', 'Frontend', 'Solution engineer', 'Solution Architect'];
+const disciplines = ['Sr. Frontend Engineer', 'Frontend Architect', 'React Specialist', 'TypeScript Expert'];
 
 export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
@@ -91,9 +91,8 @@ export const Home = () => {
   return (
     <div className={styles.home}>
       <Meta
-        title="Software Developer"
-        description="Design portfolio of Aditya Vaishnav — a product designer working on web & mobile
-          apps with a focus on motion, experience design, and accessibility."
+        title="Sr. Frontend Engineer"
+        description="Portfolio of Aditya Vaishnav — a Senior Frontend Engineer with 7+ years of experience building scalable, high-performance web applications using React and TypeScript."
       />
       <Intro
         id="intro"

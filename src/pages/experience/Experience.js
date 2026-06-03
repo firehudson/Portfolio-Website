@@ -178,11 +178,9 @@ export const Experience = ({ posts, featured }) => {
   }, []);
 
   const categories = [
-    'Full-Stack Developer',
+    'Sr. Frontend Engineer',
     'Frontend Architect',
-    'Senior Frontend Developer',
     'Frontend Developer',
-    'Solution Engineer',
   ];
 
   const { width } = useWindowSize();

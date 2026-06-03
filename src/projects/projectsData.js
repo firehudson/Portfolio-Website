@@ -1,54 +1,70 @@
-import dechea from 'assets/10-Dechea.jpg';
-import santiment from 'assets/9-Santiment.jpg';
-import GQTY from 'assets/11-GQTYdev.jpg';
-import AuthBuddyVideo from 'assets/project-demo/auth-buddy-demo.mp4';
-import AuthBuddy from 'assets/AuthBuddy.jpg';
-import AlphaVantageChartVideo from 'assets/project-demo/alpha-vantage-chart-demo.mp4';
-import AlphaVantageChart from 'assets/AlphaVantageChart.jpg';
+import dechea from ‘assets/10-Dechea.jpg’;
+import santiment from ‘assets/9-Santiment.jpg’;
+import GQTY from ‘assets/11-GQTYdev.jpg’;
+import AuthBuddyVideo from ‘assets/project-demo/auth-buddy-demo.mp4’;
+import AuthBuddy from ‘assets/AuthBuddy.jpg’;
+import AlphaVantageChartVideo from ‘assets/project-demo/alpha-vantage-chart-demo.mp4’;
+import AlphaVantageChart from ‘assets/AlphaVantageChart.jpg’;
 export const projectData = [
     {
-        id: 'Dechea',
-        title: 'Dechea',
-        role: ' Serverless Project Architect and Sr. Frontend Engineer ',
-        brief: 'Dechea is a modern dental practice platform designed to keep patients at the center of care. The application allows for the rapid... ',
-        overview: 'Dechea is a modern dental practice platform designed to keep patients at the center of care. The application allows for the rapid creation of medical findings and cost estimates in under 10 minutes.',
+        id: ‘Mercanis’,
+        title: ‘Mercanis’,
+        role: ‘Sr. Frontend Engineer’,
+        brief: ‘Mercanis is an AI-powered procurement platform that simplifies complex sourcing and compliance management for enterprises.’,
+        overview: ‘Mercanis is an AI-powered procurement platform that simplifies complex sourcing and compliance management for enterprises, helping users make faster and more informed procurement decisions.’,
         Features: [
-            'Developed a patient-centric platform that enhances user experience.',
-            'Streamlined medical documentation processes for efficiency.',
-            'Managed patient file security with strict adherence to permission protocols.'
+            ‘Built and maintained core frontend modules handling multi-step procurement workflows with complex state and conditional decision trees.’,
+            ‘Leveraged AI capabilities within the platform to surface critical data points, helping users make faster and more informed procurement decisions.’,
+            ‘Collaborated closely with product and design to deliver clean, intuitive interfaces over inherently complex business logic.’,
+            ‘Integrated Claude Code into the development workflow to accelerate feature delivery and maintain consistent code quality.’
         ],
-        justify: 'Led adaption of new technologies to improve development efficiency, implemented automated testing to ensure quality, and collaborated closely with stakeholders to refine project requirements and optimize workflows.',
-        link: 'https://www.dechea.com/',
+        justify: ‘As Sr. Frontend Engineer, I architect and develop scalable frontend features, conduct thorough PR reviews, and collaborate with cross-functional teams to translate complex AI-driven procurement workflows into intuitive user-facing interfaces.’,
+        link: ‘https://www.mercanis.com/’,
         imageUrl: dechea
     },
     {
-        id: 'Santiment',
-        title: 'Santiment',
-        role: ' Sr. Frontend Developer',
-        brief: 'Santiment is a crypto platform that allows users to track and monitor their assets while receiving updates on the latest market...',
-        overview: 'Santiment is a crypto platform that allows users to track and monitor their assets while receiving updates on the latest market trends.',
+        id: ‘Dechea’,
+        title: ‘Dechea’,
+        role: ‘Serverless Project Architect & Sr. Frontend Engineer’,
+        brief: ‘Dechea is a modern dental practice platform designed to keep patients at the center of care. The application allows for the rapid creation of medical findings and cost estimates in under 10 minutes.’,
+        overview: ‘Dechea is a modern dental practice platform designed to keep patients at the center of care. The application allows for the rapid creation of medical findings and cost estimates in under 10 minutes.’,
         Features: [
-            'Built the Santiment web app using SanUI, a core component library for small, reusable React components.',
-            'Developed and deployed reusable UI components within Storybook, ensuring cross-browser compatibility.',
-            'Integrated components into SanUI to enhance design coherence and scalability across all Santiment projects.'
+            ‘Developed a patient-centric platform that enhances user experience with GDPR-compliant patient file management.’,
+            ‘Authored and integrated browser automation test cases into the pipeline, ensuring the identification of failing features before production deployment.’,
+            ‘Developed components tested for cross-browser compatibility using tools like BrowserStack.’
         ],
-        justify: 'As a Sr. Frontend Developer, I was responsible for creating robust UI components, adhering to TDD principles, and promoting collaboration among team members, which led to a 30% reduction in testing time.',
-        link: 'https://app.santiment.net',
+        justify: ‘As Serverless Project Architect and Sr. Frontend Engineer, I spearheaded the adoption of new tools and technologies, improving development efficiency and collaborating closely with stakeholders to refine project requirements and optimize workflows.’,
+        link: ‘https://www.dechea.com/’,
+        imageUrl: dechea
+    },
+    {
+        id: ‘Santiment’,
+        title: ‘Santiment’,
+        role: ‘Frontend Developer’,
+        brief: ‘Santiment is a crypto platform that allows users to track and monitor their assets while receiving real-time updates on the latest crypto market trends.’,
+        overview: ‘Santiment is a crypto platform that allows users to track and monitor their assets while receiving updates on the latest market trends.’,
+        Features: [
+            ‘Built the Santiment web app using SanUI, a core component library for small, reusable React components.’,
+            ‘Created robust, reusable components adhering to TDD principles, resulting in reduced testing time.’,
+            ‘Implemented Storybook for improved collaboration efficiency among 10+ developers on concurrent projects.’
+        ],
+        justify: ‘As a Frontend Developer, I was responsible for creating robust UI components, adhering to TDD principles, and promoting collaboration among team members, designing responsive layouts optimized across various screen sizes.’,
+        link: ‘https://app.santiment.net’,
         imageUrl: santiment
     },
     {
-        id: 'GQTY',
-        title: 'GQTY',
-        role: ' Sr. Frontend Developer ',
-        brief: 'GQTY is a platform that enhances the GraphQL development experience by providing advanced features for real-time data',
-        overview: 'GQTY is a platform that enhances the GraphQL development experience by providing advanced features for real-time data fetching and manipulation.',
+        id: ‘GQTY’,
+        title: ‘GQTY’,
+        role: ‘Frontend Developer’,
+        brief: ‘GQTY is a platform that enhances the GraphQL development experience by providing advanced features for real-time data fetching and manipulation.’,
+        overview: ‘GQTY is a platform that enhances the GraphQL development experience by providing advanced features for real-time data fetching and manipulation.’,
         Features: [
-            'Orchestrated the integration of advanced features that attracted over 200 new developers in the first month post-launch.',
-            "Highlighted GQTY strengths, including type safety, efficient queries, and automatic code generation.",
-            'Demonstrated seamless integration with popular JavaScript frameworks such as React, Vue.js, and Angular.'
+            "Highlighted GQTY’s strengths, including type safety, efficient queries, and automatic code generation.",
+            ‘Demonstrated seamless integration with popular JavaScript frameworks such as React, Vue.js, and Angular.’,
+            ‘Ensured WCAG-compliant accessibility in all components while building reusable UI libraries.’
         ],
-        justify: "In my role, I was responsible for enhancing the platform's capabilities, ensuring a smooth user experience and effective communication of GQTY’s benefits to the developer community.",
-        link: 'https://gqty.dev/',
+        justify: "In my role, I was responsible for enhancing the platform’s capabilities, ensuring a smooth user experience and effective communication of GQTY’s benefits to the developer community.",
+        link: ‘https://gqty.dev/’,
         imageUrl: GQTY
     },
     {
